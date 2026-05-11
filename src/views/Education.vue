@@ -1,7 +1,7 @@
 <template>
 	<section
 		class="section section--education education reveal"
-		id="formacion"
+		id="education"
 	>
 		<div class="section-head">
 			<h2>{{ t('education.title') }}</h2>

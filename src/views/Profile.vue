@@ -1,7 +1,7 @@
 <template>
 	<section
 		class="section section--profile profile reveal"
-		id="perfil"
+		id="profile"
 	>
 		<div class="section-head">
 			<h2>{{ t('profile.title') }}</h2>

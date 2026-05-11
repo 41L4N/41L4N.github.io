@@ -55,10 +55,10 @@
 					class="hero__nav-mobile"
 					:aria-label="t('a11y.cvSections')"
 				>
-					<a href="#perfil">{{ t('nav.profile') }}</a>
-					<a href="#experiencia">{{ t('nav.experience') }}</a>
-					<a href="#habilidades">{{ t('nav.skills') }}</a>
-					<a href="#formacion">{{ t('nav.education') }}</a>
+					<a href="#profile">{{ t('nav.profile') }}</a>
+					<a href="#experience">{{ t('nav.experience') }}</a>
+					<a href="#skills">{{ t('nav.skills') }}</a>
+					<a href="#education">{{ t('nav.education') }}</a>
 				</nav>
 			</div>
 			<aside

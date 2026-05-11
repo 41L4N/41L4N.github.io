@@ -1,7 +1,7 @@
 <template>
 	<section
 		class="section section--languages languages reveal"
-		id="idiomas"
+		id="languages"
 	>
 		<div class="section-head">
 			<h2>{{ t('languages.title') }}</h2>
