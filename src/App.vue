@@ -6,7 +6,6 @@
 		<Profile />
 		<Experience />
 		<Skills />
-		<Education />
 		<Languages />
 	</main>
 	<SiteFooter />
@@ -16,7 +15,6 @@
 <script setup>
 import { nextTick, onMounted, provide, ref } from 'vue';
 
-import Education from '@/views/Education.vue';
 import Experience from '@/views/Experience.vue';
 import Hero from '@/views/Hero.vue';
 import Languages from '@/views/Languages.vue';

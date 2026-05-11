@@ -26,8 +26,7 @@
 	"nav": {
 		"profile": "Perfil",
 		"experience": "Experiencia",
-		"skills": "Habilidades",
-		"education": "Formación"
+		"skills": "Habilidades"
 	},
 	"header": {
 		"downloadCv": "Descargar CV"
@@ -161,21 +160,6 @@
 				"codeReview": "Revisión de código",
 				"docs": "Documentación técnica"
 			}
-		}
-	},
-	"education": {
-		"title": "Formación y capacitación",
-		"fullstack": {
-			"title": "Desarrollo Full-Stack — PHP, Laravel, Vue.js, React",
-			"meta": "2016 – Presente",
-			"source": "Aprendizaje autodidacta · Udemy / Platzi / Documentación oficial",
-			"description": "Formación continua en desarrollo web moderno, arquitecturas de software y buenas prácticas de programación."
-		},
-		"cloud": {
-			"title": "Cloud Hosting & DevOps — Google Cloud, cPanel, Hostinger",
-			"meta": "2020 – Presente",
-			"source": "Aprendizaje autodidacta · Google Cloud Skills Boost / Comunidad",
-			"description": "Administración de entornos de hosting, configuración de servidores y despliegue de aplicaciones web en producción."
 		}
 	},
 	"languages": {

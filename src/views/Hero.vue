@@ -58,14 +58,16 @@
 					<a href="#profile">{{ t('nav.profile') }}</a>
 					<a href="#experience">{{ t('nav.experience') }}</a>
 					<a href="#skills">{{ t('nav.skills') }}</a>
-					<a href="#education">{{ t('nav.education') }}</a>
 				</nav>
 			</div>
 			<aside
 				class="hero__card"
 				:aria-label="t('a11y.heroCard')"
 			>
-				<div class="stat-ring">
+				<div
+					class="stat-ring"
+					:style="statRingCssVars"
+				>
 					<svg
 						viewBox="0 0 120 120"
 						class="stat-ring__svg"
@@ -135,6 +137,19 @@ const highlightKeys = [
 	'hero.highlights.leadership',
 	'hero.highlights.practices',
 ];
+
+/** Ring radius matches SVG `r="52"`; arc fill = years / scaleMax (8+ of 10). */
+const STAT_RING_R = 52;
+const STAT_RING_C = 2 * Math.PI * STAT_RING_R;
+const STAT_RING_YEARS = 8;
+const STAT_RING_SCALE_MAX = 10;
+const statRingDashoffset =
+	STAT_RING_C * (1 - STAT_RING_YEARS / STAT_RING_SCALE_MAX);
+
+const statRingCssVars = {
+	'--stat-ring-c': String(STAT_RING_C),
+	'--stat-ring-off': String(statRingDashoffset),
+};
 </script>
 
 <style lang="scss" scoped>
@@ -321,6 +336,8 @@ const highlightKeys = [
 }
 
 .stat-ring {
+	--stat-ring-c: 326.73;
+	--stat-ring-off: 65.35;
 	position: relative;
 	width: 120px;
 	height: 120px;
@@ -343,17 +360,21 @@ const highlightKeys = [
 		stroke: var(--accent);
 		stroke-width: 8;
 		stroke-linecap: round;
-		stroke-dasharray: 326.7;
-		stroke-dashoffset: 82;
+		stroke-dasharray: var(--stat-ring-c);
+		stroke-dashoffset: var(--stat-ring-off);
 		animation: ringFill 1.4s var(--ease-out) forwards;
 	}
 
 	&__label {
 		position: absolute;
 		inset: 0;
-		display: grid;
-		place-items: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 0.12rem;
 		text-align: center;
+		translate: 0 -1px;
 	}
 
 	&__num {
@@ -365,16 +386,15 @@ const highlightKeys = [
 	}
 
 	&__cap {
-		display: block;
 		font-size: 0.75rem;
 		color: var(--text-muted);
-		margin-top: 2px;
+		line-height: 1.2;
 	}
 }
 
 @keyframes ringFill {
 	from {
-		stroke-dashoffset: 326.7;
+		stroke-dashoffset: var(--stat-ring-c);
 	}
 }
 </style>
