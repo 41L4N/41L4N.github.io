@@ -15,14 +15,19 @@
 	<script>
 		(function () {
 			try {
-			var t = localStorage.getItem("cv-theme");
-			if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+				var t = localStorage.getItem("cv-theme");
+				if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+				var l = localStorage.getItem("cv-lang");
+				if (l === "es" || l === "en") {
+					document.documentElement.lang = l;
+					document.documentElement.setAttribute("data-lang", l);
+				}
 			} catch (e) {}
 		})();
 	</script>
 </head>
 <body>
-	<a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contenido</a>
+	<a class="skip-link" href="#main">Saltar al contenido</a>
 
 	<div class="noise" aria-hidden="true"></div>
 	<div class="orb orb-a" aria-hidden="true"></div>
@@ -35,10 +40,10 @@
 				<span class="brand-text">Ailan Ñañez</span>
 			</a>
 			<nav class="nav" aria-label="Principal">
-				<a href="#perfil" data-i18n="nav.profile">Perfil</a>
-				<a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
-				<a href="#habilidades" data-i18n="nav.skills">Habilidades</a>
-				<a href="#formacion" data-i18n="nav.education">Formación</a>
+				<a href="#perfil">Perfil</a>
+				<a href="#experiencia">Experiencia</a>
+				<a href="#habilidades">Habilidades</a>
+				<a href="#formacion">Formación</a>
 			</nav>
 			<div class="header-actions">
 				<div class="lang-switch" role="group" aria-label="Idioma">
@@ -50,16 +55,16 @@
 					<span class="theme-icon theme-icon--moon" aria-hidden="true"></span>
 				</button>
 				<div class="downloads" data-dropdown>
-					<button type="button" class="btn btn--ghost btn--sm" data-dropdown-trigger aria-expanded="false" aria-haspopup="true" data-i18n="nav.download">
+					<button type="button" class="btn btn--ghost btn--sm" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
 						Descargar CV
 					</button>
 					<div class="downloads-panel" data-dropdown-panel hidden>
 						<a class="downloads-item" href="assets/cv-es.pdf" download="Ailan-Nanez-CV-ES.pdf">
-							<span class="downloads-item__label" data-i18n="download.es">PDF en español</span>
+							<span class="downloads-item__label">PDF en español</span>
 							<span class="downloads-item__meta">.pdf</span>
 						</a>
 						<a class="downloads-item" href="assets/cv-en.pdf" download="Ailan-Nanez-CV-EN.pdf">
-							<span class="downloads-item__label" data-i18n="download.en">PDF in English</span>
+							<span class="downloads-item__label">PDF en inglés</span>
 							<span class="downloads-item__meta">.pdf</span>
 						</a>
 					</div>
@@ -72,33 +77,33 @@
 		<section class="hero" id="top">
 			<div class="hero-grid">
 				<div class="hero-copy">
-					<p class="eyebrow" data-i18n="hero.eyebrow">Disponible para proyectos y equipos remotos</p>
+					<p class="eyebrow">Disponible para proyectos y equipos remotos</p>
 					<h1 class="hero-title">
 						<span class="hero-name">Ailan Alberto Ñañez</span>
-						<span class="hero-role" data-i18n="hero.role">Desarrollador Full-Stack</span>
+						<span class="hero-role">Desarrollador Full-Stack</span>
 					</h1>
-					<p class="hero-tagline" data-i18n="hero.tagline">Laravel · Vue.js · React · Node.js</p>
-					<p class="hero-lead" data-i18n="hero.lead">
-						Ocho años construyendo aplicaciones web escalables, APIs y sistemas con exigencia de calidad.
+					<p class="hero-tagline">Laravel · Vue.js · React · Node.js</p>
+					<p class="hero-lead">
+						Ocho años construyendo aplicaciones web escalables, APIs y sistemas con exigencia de calidad y documentación.
 					</p>
 					<div class="hero-cta">
-						<a class="btn btn--primary" href="mailto:ailanruiz1994@gmail.com" data-i18n="hero.ctaEmail">Escribirme</a>
+						<a class="btn btn--primary" href="mailto:ailanruiz1994@gmail.com">Escribirme</a>
 						<a class="btn btn--outline" href="https://github.com/41L4N" target="_blank" rel="noopener noreferrer">GitHub</a>
 						<a class="btn btn--outline" href="https://www.linkedin.com/in/ailan-alberto-nanez" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-						<button type="button" class="btn btn--ghost copy-email" data-email="ailanruiz1994@gmail.com" data-i18n="hero.copyEmail">
+						<button type="button" class="btn btn--ghost copy-email" data-email="ailanruiz1994@gmail.com">
 							Copiar email
 						</button>
 					</div>
 					<p class="hero-meta">
-						<span data-i18n="hero.location">Caracas, Venezuela</span>
+						<span>Caracas, Venezuela</span>
 						<span class="dot" aria-hidden="true"></span>
 						<a href="tel:+584241306799">+58 424-1306799</a>
 					</p>
-					<nav class="nav-mobile" data-i18n-aria="nav.sectionsNav" aria-label="Secciones">
-						<a href="#perfil" data-i18n="nav.profile">Perfil</a>
-						<a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
-						<a href="#habilidades" data-i18n="nav.skills">Habilidades</a>
-						<a href="#formacion" data-i18n="nav.education">Formación</a>
+					<nav class="nav-mobile" aria-label="Secciones del CV">
+						<a href="#perfil">Perfil</a>
+						<a href="#experiencia">Experiencia</a>
+						<a href="#habilidades">Habilidades</a>
+						<a href="#formacion">Formación</a>
 					</nav>
 				</div>
 				<aside class="hero-card" aria-label="Resumen rápido">
@@ -109,13 +114,13 @@
 						</svg>
 						<div class="stat-ring__label">
 							<span class="stat-ring__num">8+</span>
-							<span class="stat-ring__cap" data-i18n="hero.statYears">años</span>
+							<span class="stat-ring__cap">años</span>
 						</div>
 					</div>
 					<ul class="hero-highlights">
-						<li data-i18n="hero.h1">Infraestructura crítica y alto tráfico</li>
-						<li data-i18n="hero.h2">Liderazgo técnico y mentoría</li>
-						<li data-i18n="hero.h3">SOLID, Clean Code, documentación</li>
+						<li>Infraestructura crítica y alto tráfico</li>
+						<li>Liderazgo técnico y mentoría</li>
+						<li>SOLID, Clean Code, documentación</li>
 					</ul>
 					<div class="hero-badges" aria-hidden="true">
 						<span class="pill">REST</span>
@@ -128,60 +133,227 @@
 
 		<section class="section section--profile reveal" id="perfil">
 			<div class="section-head">
-				<h2 data-i18n="profile.title">Perfil profesional</h2>
-				<p class="section-kicker" data-i18n="profile.kicker">Más que un PDF: contexto vivo</p>
+				<h2>Perfil profesional</h2>
+				<p class="section-kicker">Más que un PDF: contexto vivo</p>
 			</div>
 			<div class="prose profile-prose">
-				<p data-i18n="profile.p1"></p>
-				<p data-i18n="profile.p2"></p>
+				<p>
+					Desarrollador Full-Stack con 8 años de experiencia construyendo aplicaciones web escalables y de alto rendimiento. Especializado en el ecosistema Laravel/PHP para backend y Vue.js/React para frontend, con sólida experiencia en arquitecturas robustas, APIs RESTful, optimización de bases de datos y liderazgo técnico de equipos.
+				</p>
+				<p>
+					Comprometido con la calidad del código a través de principios SOLID, Clean Code y documentación técnica rigurosa. Experiencia comprobada en proyectos de infraestructura crítica, e-commerce y sistemas de gestión empresarial, trabajando bajo metodologías ágiles en entornos remotos e híbridos.
+				</p>
 			</div>
 		</section>
 
 		<section class="section section--experience reveal" id="experiencia">
 			<div class="section-head">
-				<h2 data-i18n="exp.title">Experiencia</h2>
-				<p class="section-kicker" data-i18n="exp.kicker">Línea de tiempo interactiva</p>
+				<h2>Experiencia</h2>
+				<p class="section-kicker">Línea de tiempo interactiva</p>
 			</div>
-			<div class="timeline" id="experience-root"></div>
+			<div class="timeline">
+				<article class="tl-item">
+					<span class="tl-dot" aria-hidden="true"></span>
+					<div class="tl-card">
+						<header>
+							<p class="tl-role">Desarrollador Full-Stack Freelance</p>
+							<p class="tl-company">Autónomo / Clientes privados</p>
+							<p class="tl-period">jun. 2018 – Presente</p>
+						</header>
+						<ul>
+							<li>Desarrollo de aplicaciones web full-stack con Laravel, Vue.js (Quasar, Vuetify) y React.</li>
+							<li>Arquitecturas escalables para gestión, e-commerce y aplicaciones educativas.</li>
+							<li>Optimización de rendimiento y UX en proyectos de mediana y alta complejidad.</li>
+							<li>Ciclo completo: requisitos, desarrollo, despliegue y soporte post-entrega.</li>
+							<li>Integración de APIs, pasarelas de pago y servicios de terceros.</li>
+						</ul>
+					</div>
+				</article>
+				<article class="tl-item">
+					<span class="tl-dot" aria-hidden="true"></span>
+					<div class="tl-card">
+						<header>
+							<p class="tl-role">Desarrollador Web</p>
+							<p class="tl-company">Prolesys Consultores C.A.</p>
+							<p class="tl-period">jun. 2022 – abr. 2025</p>
+						</header>
+						<ul>
+							<li>Sistemas críticos para infraestructura nacional: seguridad y alta disponibilidad.</li>
+							<li>Liderazgo técnico en arquitecturas robustas y estándares de desarrollo.</li>
+							<li>Optimización en aplicaciones de alto tráfico: tiempos de respuesta y estabilidad.</li>
+							<li>Gestión de equipo y mentoría: Clean Code, SOLID, revisión de código y documentación.</li>
+							<li>Diseño y consumo de APIs REST para integración con sistemas externos.</li>
+						</ul>
+					</div>
+				</article>
+				<article class="tl-item">
+					<span class="tl-dot" aria-hidden="true"></span>
+					<div class="tl-card">
+						<header>
+							<p class="tl-role">Web Developer</p>
+							<p class="tl-company">SISMG Chile</p>
+							<p class="tl-period">jun. 2022 – abr. 2025</p>
+						</header>
+						<ul>
+							<li>Módulos de software para el mercado chileno, coordinación con equipos remotos.</li>
+							<li>Frontend con Vue.js y React, compatibilidad y rendimiento cross-browser.</li>
+							<li>Integración con backends PHP/Laravel y Node.js vía REST.</li>
+							<li>Scrum/Kanban y entrega continua en sprints.</li>
+						</ul>
+					</div>
+				</article>
+				<article class="tl-item">
+					<span class="tl-dot" aria-hidden="true"></span>
+					<div class="tl-card">
+						<header>
+							<p class="tl-role">Web Developer</p>
+							<p class="tl-company">GoldTech</p>
+							<p class="tl-period">mar. 2021 – nov. 2021</p>
+						</header>
+						<ul>
+							<li>Módulos de gestión de datos para sistemas empresariales.</li>
+							<li>Mejoras de rendimiento: ~40% menos tiempo de carga (SQL + caché).</li>
+							<li>APIs REST para integración con sistemas externos.</li>
+							<li>Refactorización de módulos legacy: mantenibilidad y escalabilidad.</li>
+						</ul>
+					</div>
+				</article>
+				<article class="tl-item">
+					<span class="tl-dot" aria-hidden="true"></span>
+					<div class="tl-card">
+						<header>
+							<p class="tl-role">Desarrollador Web</p>
+							<p class="tl-company">Corporación Homines</p>
+							<p class="tl-period">sept. 2019 – feb. 2021</p>
+						</header>
+						<ul>
+							<li>Módulos de gestión de datos para sistemas corporativos internos.</li>
+							<li>Microservicios: modularidad y escalabilidad.</li>
+							<li>Interfaces responsivas con Vue.js, HTML5, CSS3 y JavaScript.</li>
+							<li>Migración de legacy a tecnologías modernas, reduciendo deuda técnica.</li>
+						</ul>
+					</div>
+				</article>
+			</div>
 		</section>
 
 		<section class="section section--skills reveal" id="habilidades">
 			<div class="section-head">
-				<h2 data-i18n="skills.title">Habilidades técnicas</h2>
-				<p class="section-kicker" data-i18n="skills.kicker">Ecosistema y prácticas</p>
+				<h2>Habilidades técnicas</h2>
+				<p class="section-kicker">Ecosistema y prácticas</p>
 			</div>
-			<div class="bento" id="skills-root"></div>
+			<div class="bento">
+				<div class="bento-card">
+					<h3>Frontend</h3>
+					<div class="tags">
+						<span class="tag">Vue.js (Quasar, Vuetify)</span>
+						<span class="tag">React (Material UI)</span>
+						<span class="tag">Next.js</span>
+						<span class="tag">HTML5</span>
+						<span class="tag">CSS3 / SASS</span>
+						<span class="tag">Bootstrap</span>
+						<span class="tag">JavaScript</span>
+						<span class="tag">TypeScript</span>
+						<span class="tag">jQuery</span>
+					</div>
+				</div>
+				<div class="bento-card">
+					<h3>Backend</h3>
+					<div class="tags">
+						<span class="tag">PHP / Laravel</span>
+						<span class="tag">Ruby on Rails</span>
+						<span class="tag">Node.js</span>
+						<span class="tag">TypeScript</span>
+					</div>
+				</div>
+				<div class="bento-card">
+					<h3>Bases de datos</h3>
+					<div class="tags">
+						<span class="tag">MySQL</span>
+						<span class="tag">Diseño relacional</span>
+						<span class="tag">Optimización de consultas SQL</span>
+					</div>
+				</div>
+				<div class="bento-card">
+					<h3>APIs e integraciones</h3>
+					<div class="tags">
+						<span class="tag">APIs REST</span>
+						<span class="tag">Pasarelas de pago</span>
+						<span class="tag">Servicios externos</span>
+					</div>
+				</div>
+				<div class="bento-card">
+					<h3>Infraestructura</h3>
+					<div class="tags">
+						<span class="tag">Google Cloud</span>
+						<span class="tag">Hostinger</span>
+						<span class="tag">cPanel</span>
+						<span class="tag">Git</span>
+						<span class="tag">GitHub</span>
+						<span class="tag">GitLab</span>
+					</div>
+				</div>
+				<div class="bento-card">
+					<h3>Prácticas</h3>
+					<div class="tags">
+						<span class="tag">SOLID</span>
+						<span class="tag">Clean Code</span>
+						<span class="tag">Scrum</span>
+						<span class="tag">Kanban</span>
+						<span class="tag">CI/CD</span>
+						<span class="tag">Revisión de código</span>
+						<span class="tag">Documentación técnica</span>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section class="section section--education reveal" id="formacion">
 			<div class="section-head">
-				<h2 data-i18n="edu.title">Formación y capacitación</h2>
+				<h2>Formación y capacitación</h2>
 			</div>
-			<div class="cards-edu" id="education-root"></div>
+			<div class="cards-edu">
+				<article class="edu-card">
+					<h3>Desarrollo Full-Stack — PHP, Laravel, Vue.js, React</h3>
+					<p class="edu-meta">2016 – Presente</p>
+					<p class="edu-source">Aprendizaje autodidacta · Udemy / Platzi / Documentación oficial</p>
+					<p class="edu-desc">
+						Formación continua en desarrollo web moderno, arquitecturas de software y buenas prácticas de programación.
+					</p>
+				</article>
+				<article class="edu-card">
+					<h3>Cloud Hosting &amp; DevOps — Google Cloud, cPanel, Hostinger</h3>
+					<p class="edu-meta">2020 – Presente</p>
+					<p class="edu-source">Aprendizaje autodidacta · Google Cloud Skills Boost / Comunidad</p>
+					<p class="edu-desc">
+						Administración de entornos de hosting, configuración de servidores y despliegue de aplicaciones web en producción.
+					</p>
+				</article>
+			</div>
 		</section>
 
 		<section class="section section--languages reveal" id="idiomas">
 			<div class="section-head">
-				<h2 data-i18n="lang.title">Idiomas</h2>
+				<h2>Idiomas</h2>
 			</div>
 			<div class="lang-cards">
-			<article class="lang-card">
-				<h3 data-i18n="lang.esTitle">Español</h3>
-				<p data-i18n="lang.esLevel">Nativo.</p>
-			</article>
-			<article class="lang-card">
-				<h3 data-i18n="lang.enTitle">Inglés</h3>
-				<p data-i18n="lang.enLevel">Nivel básico — lectura de documentación técnica.</p>
-			</article>
+				<article class="lang-card">
+					<h3>Español</h3>
+					<p>Nativo.</p>
+				</article>
+				<article class="lang-card">
+					<h3>Inglés</h3>
+					<p>Nivel básico — lectura de documentación técnica.</p>
+				</article>
 			</div>
 		</section>
 	</main>
 
 	<footer class="site-footer">
 		<p>
-			<span data-i18n="footer.built">Hecho a mano con HTML, CSS y JS</span>
+			<span>Hecho a mano con HTML, CSS y JS</span>
 			·
-			<a href="https://github.com/41L4N/41L4N.github.io" target="_blank" rel="noopener noreferrer" data-i18n="footer.source">Código fuente</a>
+			<a href="https://github.com/41L4N/41L4N.github.io" target="_blank" rel="noopener noreferrer">Código fuente</a>
 		</p>
 	</footer>
 
