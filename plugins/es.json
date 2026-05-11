@@ -1,0 +1,11 @@
+{
+	"a11y": {
+		"theme": {
+			"ariaLabel": "Cambiar tema claro u oscuro",
+			"title": "Tema"
+		}
+	},
+	"toast": {
+		"emailCopied": "Email copiado al portapapeles"
+	}
+}

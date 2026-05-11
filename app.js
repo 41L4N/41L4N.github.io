@@ -65,13 +65,8 @@
 
 		const themeBtn = document.querySelector(".theme-toggle");
 		if (themeBtn) {
-			if (code === "en") {
-				themeBtn.setAttribute("aria-label", "Toggle light or dark theme");
-				themeBtn.setAttribute("title", "Theme");
-			} else {
-				themeBtn.setAttribute("aria-label", "Cambiar tema claro u oscuro");
-				themeBtn.setAttribute("title", "Tema");
-			}
+			themeBtn.setAttribute("aria-label", t("a11y.theme.ariaLabel", code));
+			themeBtn.setAttribute("title", t("a11y.theme.title", code));
 		}
 	}
 
@@ -147,8 +142,7 @@
 				if (!email) return;
 
 				function ok() {
-					var en = document.documentElement.lang === "en";
-					showToast(en ? "Email copied to clipboard" : "Email copiado al portapapeles");
+					showToast(t("toast.emailCopied"));
 				}
 
 				if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -217,9 +211,19 @@
 		initReveal();
 	}
 
+	function boot() {
+		var p =
+			typeof loadI18nBundles === "function"
+				? loadI18nBundles("plugins/")
+				: typeof Promise !== "undefined"
+					? Promise.resolve()
+					: { then: function (fn) { fn(); return this; } };
+		p.then(init).catch(init);
+	}
+
 	if (document.readyState === "loading") {
-		document.addEventListener("DOMContentLoaded", init);
+		document.addEventListener("DOMContentLoaded", boot);
 	} else {
-		init();
+		boot();
 	}
 })();
