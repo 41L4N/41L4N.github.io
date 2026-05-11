@@ -58,6 +58,7 @@
 					<a href="#profile">{{ t('nav.profile') }}</a>
 					<a href="#experience">{{ t('nav.experience') }}</a>
 					<a href="#skills">{{ t('nav.skills') }}</a>
+					<a href="#project-workflow">{{ t('nav.projectWorkflow') }}</a>
 				</nav>
 			</div>
 			<aside
