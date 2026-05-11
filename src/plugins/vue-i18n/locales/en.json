@@ -53,7 +53,6 @@
 	},
 	"profile": {
 		"title": "Professional profile",
-		"kicker": "More than a PDF: live context",
 		"intro": "Full-Stack Developer with 8 years of experience building scalable, high-performance web applications. Specialized in the Laravel/PHP ecosystem for backend and Vue.js/React for frontend, with solid experience in robust architectures, RESTful APIs, database optimization, and technical team leadership.",
 		"commitment": "Committed to code quality through SOLID principles, Clean Code, and rigorous technical documentation. Proven experience in critical infrastructure, e-commerce, and enterprise management projects, working with agile methodologies in remote and hybrid environments."
 	},

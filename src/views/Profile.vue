@@ -5,9 +5,6 @@
 	>
 		<div class="section-head">
 			<h2>{{ t('profile.title') }}</h2>
-			<p class="section-kicker">
-				{{ t('profile.kicker') }}
-			</p>
 		</div>
 		<div class="profile__prose">
 			<p
