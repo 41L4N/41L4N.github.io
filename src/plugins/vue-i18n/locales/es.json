@@ -27,7 +27,8 @@
 		"profile": "Perfil",
 		"experience": "Experiencia",
 		"skills": "Habilidades",
-		"projectWorkflow": "Flujo"
+		"projectWorkflow": "Flujo",
+		"projects": "Proyectos"
 	},
 	"header": {
 		"downloadCv": "Descargar CV"
@@ -168,6 +169,23 @@
 		"kicker": "Agilidad, Issues, Projects y ambientes",
 		"primary": "GitHub Projects e Issues como base del flujo, con documentación viva y sprints visibles en GitHub a través de pull requests y seguimiento continuo.",
 		"secondary": "Ambientes de trabajo claros (dev, QA, staging, prod) y, cuando aplica, soporte con Scrum, Jira y Confluence."
+	},
+	"projects": {
+		"title": "Proyectos",
+		"kicker": "Proyectos propios y casos reales",
+		"proStoreKit": {
+			"name": "Pro Store Kit",
+			"statusLabel": "Estado:",
+			"statusValue": "Activo",
+			"ctaDocs": "Ver documentación",
+			"description": "Proyecto modelo full-stack orientado a arquitectura desacoplada, consistencia visual y documentación técnica de punta a punta para representar estándares de implementación en entornos reales.",
+			"linksLabel": "Repositorios:",
+			"links": {
+				"docs": "Documentación",
+				"frontRepo": "Frontend",
+				"backRepoPending": "Backend"
+			}
+		}
 	},
 	"languages": {
 		"title": "Idiomas",

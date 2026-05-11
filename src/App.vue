@@ -6,6 +6,7 @@
 		<Profile />
 		<Skills />
 		<ProjectWorkflow />
+		<Projects />
 		<Languages />
 		<Experience />
 	</main>
@@ -21,6 +22,7 @@ import Hero from '@/views/Hero.vue';
 import Languages from '@/views/Languages.vue';
 import PreMainChrome from '@/views/PreMainChrome.vue';
 import Profile from '@/views/Profile.vue';
+import Projects from '@/views/Projects.vue';
 import ProjectWorkflow from '@/views/ProjectWorkflow.vue';
 import SiteFooter from '@/views/SiteFooter.vue';
 import SiteHeader from '@/views/SiteHeader.vue';

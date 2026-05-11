@@ -27,7 +27,8 @@
 		"profile": "Profile",
 		"experience": "Experience",
 		"skills": "Skills",
-		"projectWorkflow": "Workflow"
+		"projectWorkflow": "Workflow",
+		"projects": "Projects"
 	},
 	"header": {
 		"downloadCv": "Download CV"
@@ -168,6 +169,23 @@
 		"kicker": "Agility, Issues, Projects, and environments",
 		"primary": "GitHub Projects and Issues as the workflow backbone, with living documentation and sprint visibility in GitHub through pull requests and continuous tracking.",
 		"secondary": "Clear delivery environments (dev, QA, staging, prod) and, when needed, support from Scrum, Jira, and Confluence."
+	},
+	"projects": {
+		"title": "Projects",
+		"kicker": "Own projects and real-world cases",
+		"proStoreKit": {
+			"name": "Pro Store Kit",
+			"statusLabel": "Status:",
+			"statusValue": "Active",
+			"ctaDocs": "View documentation",
+			"description": "Full-stack model project focused on decoupled architecture, visual consistency, and end-to-end technical documentation to reflect implementation standards in real delivery contexts.",
+			"linksLabel": "Repositories:",
+			"links": {
+				"docs": "Documentation",
+				"frontRepo": "Frontend",
+				"backRepoPending": "Backend"
+			}
+		}
 	},
 	"languages": {
 		"title": "Languages",

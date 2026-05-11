@@ -17,6 +17,7 @@
 				<a href="#experience">{{ t('nav.experience') }}</a>
 				<a href="#skills">{{ t('nav.skills') }}</a>
 				<a href="#project-workflow">{{ t('nav.projectWorkflow') }}</a>
+				<a href="#projects">{{ t('nav.projects') }}</a>
 			</nav>
 			<div class="site-header__actions">
 				<div
