@@ -51,11 +51,13 @@
 					@click="toggleTheme"
 				>
 					<span
-						class="theme-icon theme-icon--sun"
+						v-if="theme === 'light'"
+						class="site-header__theme-icon site-header__theme-icon--moon"
 						aria-hidden="true"
 					/>
 					<span
-						class="theme-icon theme-icon--moon"
+						v-else
+						class="site-header__theme-icon site-header__theme-icon--sun"
 						aria-hidden="true"
 					/>
 				</button>
@@ -72,16 +74,17 @@
 </template>
 
 <script setup>
-import { computed, onMounted, watch } from 'vue';
+import { storeToRefs } from 'pinia';
+import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 import cvEnUrl from '@/assets/files/cv-en.pdf?url';
 import cvEsUrl from '@/assets/files/cv-es.pdf?url';
+import { useUiStore } from '@/plugins/pinia';
 
-const LOCALE_STORAGE_KEY = 'site-locale';
-const THEME_STORAGE_KEY = 'site-theme';
-
-const { t, locale } = useI18n();
+const { t } = useI18n();
+const ui = useUiStore();
+const { locale, theme } = storeToRefs(ui);
 
 const cvHref = computed(() => (locale.value === 'es' ? cvEsUrl : cvEnUrl));
 const cvDownloadFilename = computed(() =>
@@ -89,43 +92,12 @@ const cvDownloadFilename = computed(() =>
 );
 
 function setLocale(code) {
-	locale.value = code;
-	localStorage.setItem(LOCALE_STORAGE_KEY, code);
-}
-
-watch(
-	locale,
-	(l) => {
-		document.documentElement.setAttribute('lang', l === 'es' ? 'es' : 'en');
-	},
-	{ immediate: true },
-);
-
-function applyDataTheme(mode) {
-	document.documentElement.setAttribute('data-theme', mode);
-}
-
-function initThemeFromStorageOrSystem() {
-	const stored = localStorage.getItem(THEME_STORAGE_KEY);
-	const mode =
-		stored === 'light' || stored === 'dark'
-			? stored
-			: window.matchMedia('(prefers-color-scheme: dark)').matches
-				? 'dark'
-				: 'light';
-	applyDataTheme(mode);
+	ui.setLocale(code);
 }
 
 function toggleTheme() {
-	const next =
-		document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-	applyDataTheme(next);
-	localStorage.setItem(THEME_STORAGE_KEY, next);
+	ui.toggleTheme();
 }
-
-onMounted(() => {
-	initThemeFromStorageOrSystem();
-});
 </script>
 
 <style lang="scss" scoped>
@@ -264,7 +236,7 @@ onMounted(() => {
 		}
 	}
 
-	.theme-icon {
+	&__theme-icon {
 		width: 20px;
 		height: 20px;
 		display: block;
