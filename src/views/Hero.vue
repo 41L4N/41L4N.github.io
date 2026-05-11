@@ -21,7 +21,7 @@
 				<div class="hero-cta">
 					<a
 						class="btn btn--primary"
-						href="mailto:ailanruiz1994@gmail.com"
+						:href="`mailto:${CONTACT_EMAIL}`"
 					>{{ t('hero.ctaWrite') }}</a>
 					<a
 						class="btn btn--outline"
@@ -37,8 +37,8 @@
 					>{{ t('hero.ctaLinkedin') }}</a>
 					<button
 						type="button"
-						class="btn btn--ghost copy-email"
-						data-email="ailanruiz1994@gmail.com"
+						class="btn btn--ghost"
+						@click="onCopyEmail"
 					>
 						{{ t('hero.ctaCopyEmail') }}
 					</button>
@@ -111,9 +111,24 @@
 </template>
 
 <script setup>
+import { inject } from 'vue';
 import { useI18n } from 'vue-i18n';
 
+import { SHOW_TOAST_KEY } from '@/views/Toast.vue';
+
+const CONTACT_EMAIL = 'ailanruiz1994@gmail.com';
+
 const { t } = useI18n();
+const showToast = inject(SHOW_TOAST_KEY);
+
+async function onCopyEmail() {
+	if (!navigator.clipboard?.writeText) return;
+	const ok = await navigator.clipboard.writeText(CONTACT_EMAIL).then(
+		() => true,
+		() => false,
+	);
+	if (ok) showToast?.(t('toast.emailCopied'));
+}
 
 const highlightKeys = [
 	'hero.highlights.infra',

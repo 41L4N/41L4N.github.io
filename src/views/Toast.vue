@@ -1,12 +1,37 @@
 <template>
 	<div
-		id="toast"
 		class="toast"
+		:class="{ 'is-visible': toastVisible }"
 		role="status"
 		aria-live="polite"
-		hidden
-	/>
+	>
+		{{ toastMessage }}
+	</div>
 </template>
+
+<script>
+export const SHOW_TOAST_KEY = Symbol('showToast');
+</script>
+
+<script setup>
+import { ref } from 'vue';
+
+const toastVisible = ref(false);
+const toastMessage = ref('');
+
+let hideTimer;
+
+function showToast(message, ms = 2800) {
+	toastMessage.value = message;
+	toastVisible.value = true;
+	clearTimeout(hideTimer);
+	hideTimer = setTimeout(() => {
+		toastVisible.value = false;
+	}, ms);
+}
+
+defineExpose({ showToast });
+</script>
 
 <style lang="scss" scoped>
 .toast {
@@ -24,6 +49,7 @@
 	font-size: 0.9rem;
 	font-weight: 500;
 	transition: transform 0.35s var(--ease-out);
+	pointer-events: none;
 }
 
 .toast.is-visible {

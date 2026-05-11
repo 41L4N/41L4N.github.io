@@ -30,10 +30,7 @@
 		"education": "Formación"
 	},
 	"header": {
-		"downloadCv": "Descargar CV",
-		"cvPdfEs": "PDF en español",
-		"cvPdfEn": "PDF en inglés",
-		"fileExtension": ".pdf"
+		"downloadCv": "Descargar CV"
 	},
 	"hero": {
 		"eyebrow": "Disponible para proyectos y equipos remotos",
@@ -194,7 +191,7 @@
 		}
 	},
 	"footer": {
-		"crafted": "Hecho a mano con HTML, CSS y JS",
+		"crafted": "Hecho con Vue y Vite",
 		"sourceCode": "Código fuente"
 	},
 	"toast": {

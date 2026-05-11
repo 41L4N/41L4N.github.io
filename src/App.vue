@@ -10,11 +10,11 @@
 		<Languages />
 	</main>
 	<SiteFooter />
-	<Toast />
+	<Toast ref="toastRef" />
 </template>
 
 <script setup>
-import { nextTick, onMounted } from 'vue';
+import { nextTick, onMounted, provide, ref } from 'vue';
 
 import Education from '@/views/Education.vue';
 import Experience from '@/views/Experience.vue';
@@ -25,7 +25,13 @@ import Profile from '@/views/Profile.vue';
 import SiteFooter from '@/views/SiteFooter.vue';
 import SiteHeader from '@/views/SiteHeader.vue';
 import Skills from '@/views/Skills.vue';
-import Toast from '@/views/Toast.vue';
+import Toast, { SHOW_TOAST_KEY } from '@/views/Toast.vue';
+
+const toastRef = ref(null);
+
+provide(SHOW_TOAST_KEY, (message, ms) => {
+	toastRef.value?.showToast?.(message, ms);
+});
 
 function initReveal() {
 	const els = document.querySelectorAll('.reveal');

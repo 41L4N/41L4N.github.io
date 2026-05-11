@@ -30,10 +30,7 @@
 		"education": "Education"
 	},
 	"header": {
-		"downloadCv": "Download CV",
-		"cvPdfEs": "PDF in Spanish",
-		"cvPdfEn": "PDF in English",
-		"fileExtension": ".pdf"
+		"downloadCv": "Download CV"
 	},
 	"hero": {
 		"eyebrow": "Available for projects and remote teams",
@@ -194,7 +191,7 @@
 		}
 	},
 	"footer": {
-		"crafted": "Hand-crafted with HTML, CSS, and JS",
+		"crafted": "Built with Vue and Vite",
 		"sourceCode": "Source code"
 	},
 	"toast": {
