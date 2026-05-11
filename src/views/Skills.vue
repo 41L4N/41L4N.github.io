@@ -73,6 +73,21 @@
 							<path d="M9 11l3 3L22 4" />
 							<path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
 						</template>
+						<template v-else-if="category.icon === 'ai'">
+							<path d="M12 3v4" />
+							<path d="M12 17v4" />
+							<path d="M3 12h4" />
+							<path d="M17 12h4" />
+							<path d="M6 6l2.6 2.6" />
+							<path d="M15.4 15.4L18 18" />
+							<path d="M18 6l-2.6 2.6" />
+							<path d="M8.6 15.4L6 18" />
+							<circle
+								cx="12"
+								cy="12"
+								r="3.6"
+							/>
+						</template>
 					</svg>
 				</div>
 				<h3 class="skills__cat-title">
@@ -96,6 +111,18 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 
 const categories = [
+	{
+		icon: 'ai',
+		nameKey: 'skills.categories.ai.name',
+		tagKeys: [
+			'skills.categories.ai.cursor',
+			'skills.categories.ai.gemini',
+			'skills.categories.ai.agents',
+			'skills.categories.ai.prompting',
+			'skills.categories.ai.stackConfig',
+			'skills.categories.ai.notebooksGems',
+		],
+	},
 	{
 		icon: 'frontend',
 		nameKey: 'skills.categories.frontend.name',

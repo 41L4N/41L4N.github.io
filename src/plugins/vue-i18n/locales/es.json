@@ -61,7 +61,7 @@
 		"title": "Experiencia",
 		"kicker": "Línea de tiempo interactiva",
 		"freelance": {
-			"role": "Desarrollador Full-Stack Freelance",
+			"role": "Desarrollador Web Full-Stack Freelance",
 			"company": "Autónomo / Clientes privados",
 			"period": "jun. 2018 – Presente",
 			"bullet1": "Desarrollo de aplicaciones web full-stack con Laravel, Vue.js (Quasar, Vuetify) y React.",
@@ -71,7 +71,7 @@
 			"bullet5": "Integración de APIs, pasarelas de pago y servicios de terceros."
 		},
 		"prolesys": {
-			"role": "Desarrollador Web",
+			"role": "Desarrollador Web Full-Stack",
 			"company": "Prolesys Consultores C.A.",
 			"period": "jun. 2022 – abr. 2025",
 			"bullet1": "Sistemas críticos para infraestructura nacional: seguridad y alta disponibilidad.",
@@ -81,7 +81,7 @@
 			"bullet5": "Diseño y consumo de APIs REST para integración con sistemas externos."
 		},
 		"sismg": {
-			"role": "Web Developer",
+			"role": "Desarrollador Web Full-Stack",
 			"company": "SISMG Chile",
 			"period": "jun. 2022 – abr. 2025",
 			"bullet1": "Módulos de software para el mercado chileno, coordinación con equipos remotos.",
@@ -90,7 +90,7 @@
 			"bullet4": "Scrum/Kanban y entrega continua en sprints."
 		},
 		"goldtech": {
-			"role": "Web Developer",
+			"role": "Desarrollador Web Full-Stack",
 			"company": "GoldTech",
 			"period": "mar. 2021 – nov. 2021",
 			"bullet1": "Módulos de gestión de datos para sistemas empresariales.",
@@ -99,7 +99,7 @@
 			"bullet4": "Refactorización de módulos legacy: mantenibilidad y escalabilidad."
 		},
 		"homines": {
-			"role": "Desarrollador Web",
+			"role": "Desarrollador Web Full-Stack",
 			"company": "Corporación Homines",
 			"period": "sept. 2019 – feb. 2021",
 			"bullet1": "Módulos de gestión de datos para sistemas corporativos internos.",
@@ -161,6 +161,15 @@
 				"cicd": "CI/CD",
 				"codeReview": "Revisión de código",
 				"docs": "Documentación técnica"
+			},
+			"ai": {
+				"name": "IA aplicada al desarrollo",
+				"cursor": "Cursor (uso diario en desarrollo)",
+				"gemini": "Gemini para análisis y apoyo técnico",
+				"agents": "Uso de agentes para tareas repetitivas",
+				"prompting": "Prompting enfocado en código y documentación",
+				"stackConfig": "Configuración asistida de stacks y flujos",
+				"notebooksGems": "Cuadernos/Gems para organización y contexto"
 			}
 		}
 	},

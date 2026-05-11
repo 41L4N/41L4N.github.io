@@ -7,8 +7,8 @@
 		<Skills />
 		<ProjectWorkflow />
 		<Projects />
-		<Languages />
 		<Experience />
+		<Languages />
 	</main>
 	<SiteFooter />
 	<Toast ref="toastRef" />

@@ -61,7 +61,7 @@
 		"title": "Experience",
 		"kicker": "Interactive timeline",
 		"freelance": {
-			"role": "Full-Stack Freelance Developer",
+			"role": "Freelance Full-Stack Web Developer",
 			"company": "Self-employed / Private clients",
 			"period": "Jun 2018 – Present",
 			"bullet1": "Full-stack web development with Laravel, Vue.js (Quasar, Vuetify), and React.",
@@ -71,7 +71,7 @@
 			"bullet5": "Integration of APIs, payment gateways, and third-party services."
 		},
 		"prolesys": {
-			"role": "Web Developer",
+			"role": "Full-Stack Web Developer",
 			"company": "Prolesys Consultores C.A.",
 			"period": "Jun 2022 – Apr 2025",
 			"bullet1": "Critical systems for national infrastructure: security and high availability.",
@@ -81,7 +81,7 @@
 			"bullet5": "Design and consumption of REST APIs for integration with external systems."
 		},
 		"sismg": {
-			"role": "Web Developer",
+			"role": "Full-Stack Web Developer",
 			"company": "SISMG Chile",
 			"period": "Jun 2022 – Apr 2025",
 			"bullet1": "Software modules for the Chilean market, coordination with remote teams.",
@@ -90,7 +90,7 @@
 			"bullet4": "Scrum/Kanban and continuous delivery in sprints."
 		},
 		"goldtech": {
-			"role": "Web Developer",
+			"role": "Full-Stack Web Developer",
 			"company": "GoldTech",
 			"period": "Mar 2021 – Nov 2021",
 			"bullet1": "Data management modules for enterprise systems.",
@@ -99,7 +99,7 @@
 			"bullet4": "Legacy module refactoring: maintainability and scalability."
 		},
 		"homines": {
-			"role": "Web Developer",
+			"role": "Full-Stack Web Developer",
 			"company": "Corporación Homines",
 			"period": "Sep 2019 – Feb 2021",
 			"bullet1": "Data management modules for internal corporate systems.",
@@ -161,6 +161,15 @@
 				"cicd": "CI/CD",
 				"codeReview": "Code review",
 				"docs": "Technical documentation"
+			},
+			"ai": {
+				"name": "AI-assisted development",
+				"cursor": "Cursor (daily development usage)",
+				"gemini": "Gemini for analysis and technical support",
+				"agents": "Agent workflows for repetitive tasks",
+				"prompting": "Prompting focused on code and docs",
+				"stackConfig": "Assisted stack and workflow configuration",
+				"notebooksGems": "Notebooks/Gems for context organization"
 			}
 		}
 	},
