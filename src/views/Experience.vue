@@ -13,17 +13,17 @@
 			<article
 				v-for="(job, jobIndex) in jobs"
 				:key="jobIndex"
-				class="tl-item"
+				class="timeline__item"
 			>
 				<span
-					class="tl-dot"
+					class="timeline__dot"
 					aria-hidden="true"
 				/>
-				<div class="tl-card">
+				<div class="timeline__card">
 					<header>
-						<p class="tl-role">{{ t(job.roleKey) }}</p>
-						<p class="tl-company">{{ t(job.companyKey) }}</p>
-						<p class="tl-period">{{ t(job.periodKey) }}</p>
+						<p class="timeline__role">{{ t(job.roleKey) }}</p>
+						<p class="timeline__company">{{ t(job.companyKey) }}</p>
+						<p class="timeline__period">{{ t(job.periodKey) }}</p>
 					</header>
 					<ul>
 						<li
@@ -111,108 +111,102 @@ const jobs = [
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
-}
 
-.timeline::before {
-	content: "";
-	position: absolute;
-	left: 11px;
-	top: 6px;
-	bottom: 6px;
-	width: 2px;
-	background: linear-gradient(var(--accent), var(--accent-2));
-	opacity: 0.35;
-	border-radius: 2px;
-}
+	&::before {
+		content: "";
+		position: absolute;
+		left: 11px;
+		top: 6px;
+		bottom: 6px;
+		width: 2px;
+		background: linear-gradient(var(--accent), var(--accent-2));
+		opacity: 0.35;
+		border-radius: 2px;
 
-@media (min-width: 640px) {
-	.timeline::before {
-		left: 15px;
+		@media (min-width: 640px) {
+			left: 15px;
+		}
 	}
-}
 
-.tl-item {
-	position: relative;
-	padding-left: 2.75rem;
-}
+	&__item {
+		position: relative;
+		padding-left: 2.75rem;
 
-@media (min-width: 640px) {
-	.tl-item {
-		padding-left: 3.25rem;
+		@media (min-width: 640px) {
+			padding-left: 3.25rem;
+		}
 	}
-}
 
-.tl-dot {
-	position: absolute;
-	left: 4px;
-	top: 6px;
-	width: 16px;
-	height: 16px;
-	border-radius: 50%;
-	background: var(--surface-solid);
-	border: 3px solid var(--accent);
-	box-shadow: 0 0 0 4px var(--accent-soft);
-}
+	&__dot {
+		position: absolute;
+		left: 4px;
+		top: 6px;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background: var(--surface-solid);
+		border: 3px solid var(--accent);
+		box-shadow: 0 0 0 4px var(--accent-soft);
 
-@media (min-width: 640px) {
-	.tl-dot {
-		left: 8px;
+		@media (min-width: 640px) {
+			left: 8px;
+		}
 	}
-}
 
-.tl-card {
-	border-radius: var(--radius-md);
-	border: 1px solid var(--border);
-	background: var(--surface);
-	padding: 1.25rem 1.35rem;
-	transition: border-color 0.2s, transform 0.2s var(--ease-out);
-}
+	&__card {
+		border-radius: var(--radius-md);
+		border: 1px solid var(--border);
+		background: var(--surface);
+		padding: 1.25rem 1.35rem;
+		transition: border-color 0.2s, transform 0.2s var(--ease-out);
 
-.tl-card:hover {
-	border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
-	transform: translateY(-2px);
-}
+		&:hover {
+			border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
+			transform: translateY(-2px);
+		}
 
-.tl-card header {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.35rem 1rem;
-	align-items: baseline;
-	margin-bottom: 0.65rem;
-}
+		header {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.35rem 1rem;
+			align-items: baseline;
+			margin-bottom: 0.65rem;
+		}
 
-.tl-role {
-	margin: 0;
-	font-size: 1.05rem;
-	font-weight: 600;
-}
+		ul {
+			margin: 0;
+			padding-left: 1.15rem;
+			color: var(--text-muted);
+			font-size: 0.92rem;
+		}
 
-.tl-company {
-	margin: 0;
-	color: var(--accent-2);
-	font-weight: 500;
-	font-size: 0.95rem;
-}
+		li {
+			margin-bottom: 0.35rem;
 
-.tl-period {
-	margin: 0 0 0 auto;
-	font-size: 0.82rem;
-	color: var(--text-muted);
-	font-variant-numeric: tabular-nums;
-}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 
-.tl-card ul {
-	margin: 0;
-	padding-left: 1.15rem;
-	color: var(--text-muted);
-	font-size: 0.92rem;
-}
+	&__role {
+		margin: 0;
+		font-size: 1.05rem;
+		font-weight: 600;
+	}
 
-.tl-card li {
-	margin-bottom: 0.35rem;
-}
+	&__company {
+		margin: 0;
+		color: var(--accent-2);
+		font-weight: 500;
+		font-size: 0.95rem;
+	}
 
-.tl-card li:last-child {
-	margin-bottom: 0;
+	&__period {
+		margin: 0 0 0 auto;
+		font-size: 0.82rem;
+		color: var(--text-muted);
+		font-variant-numeric: tabular-nums;
+	}
 }
 </style>

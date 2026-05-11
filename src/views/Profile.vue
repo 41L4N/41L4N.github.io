@@ -1,6 +1,6 @@
 <template>
 	<section
-		class="section section--profile reveal"
+		class="section section--profile profile reveal"
 		id="perfil"
 	>
 		<div class="section-head">
@@ -9,7 +9,7 @@
 				{{ t('profile.kicker') }}
 			</p>
 		</div>
-		<div class="prose profile-prose">
+		<div class="profile__prose">
 			<p
 				v-for="paragraphKey in paragraphKeys"
 				:key="paragraphKey"
@@ -32,13 +32,15 @@ const paragraphKeys = [
 </script>
 
 <style lang="scss" scoped>
-.prose p {
-	margin: 0 0 1rem;
-	max-width: 70ch;
-	color: var(--text-muted);
-}
+.profile {
+	&__prose p {
+		margin: 0 0 1rem;
+		max-width: 70ch;
+		color: var(--text-muted);
+	}
 
-.prose p:last-child {
-	margin-bottom: 0;
+	&__prose p:last-child {
+		margin-bottom: 0;
+	}
 }
 </style>

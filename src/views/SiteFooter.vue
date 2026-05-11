@@ -4,6 +4,7 @@
 			<span>{{ t('footer.crafted') }}</span>
 			·
 			<a
+				class="site-footer__link"
 				href="https://github.com/41L4N/41L4N.github.io"
 				target="_blank"
 				rel="noopener noreferrer"
@@ -27,14 +28,14 @@ const { t } = useI18n();
 	color: var(--text-muted);
 	font-size: 0.88rem;
 	border-top: 1px solid var(--border);
-}
 
-.site-footer a {
-	color: var(--accent-2);
-	text-decoration: none;
-}
+	&__link {
+		color: var(--accent-2);
+		text-decoration: none;
 
-.site-footer a:hover {
-	text-decoration: underline;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 </style>

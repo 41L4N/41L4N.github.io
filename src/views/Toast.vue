@@ -1,7 +1,7 @@
 <template>
 	<div
 		class="toast"
-		:class="{ 'is-visible': toastVisible }"
+		:class="{ 'toast--visible': toastVisible }"
 		role="status"
 		aria-live="polite"
 	>
@@ -50,9 +50,9 @@ defineExpose({ showToast });
 	font-weight: 500;
 	transition: transform 0.35s var(--ease-out);
 	pointer-events: none;
-}
 
-.toast.is-visible {
-	transform: translateX(-50%) translateY(0);
+	&--visible {
+		transform: translateX(-50%) translateY(0);
+	}
 }
 </style>

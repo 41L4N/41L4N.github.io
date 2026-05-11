@@ -1,6 +1,6 @@
 <template>
 	<section
-		class="section section--skills reveal"
+		class="section section--skills skills reveal"
 		id="habilidades"
 	>
 		<div class="section-head">
@@ -9,18 +9,18 @@
 				{{ t('skills.kicker') }}
 			</p>
 		</div>
-		<div class="bento">
+		<div class="skills__bento">
 			<div
 				v-for="(category, categoryIndex) in categories"
 				:key="categoryIndex"
-				class="bento-card"
+				class="skills__card"
 			>
 				<h3>{{ t(category.nameKey) }}</h3>
-				<div class="tags">
+				<div class="skills__tags">
 					<span
 						v-for="tagKey in category.tagKeys"
 						:key="tagKey"
-						class="tag"
+						class="skills__tag"
 					>{{ t(tagKey) }}</span>
 				</div>
 			</div>
@@ -100,54 +100,56 @@ const categories = [
 </script>
 
 <style lang="scss" scoped>
-.bento {
-	display: grid;
-	gap: 1rem;
-	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+.skills {
+	&__bento {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	}
+
+	&__card {
+		border-radius: var(--radius-md);
+		border: 1px solid var(--border);
+		background: var(--surface);
+		padding: 1.15rem 1.25rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+		min-height: 140px;
+		transition: border-color 0.2s;
+
+		&:hover {
+			border-color: color-mix(in srgb, var(--accent-2) 40%, var(--border));
+		}
+
+		h3 {
+			margin: 0;
+			font-size: 0.82rem;
+			font-weight: 700;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: var(--accent);
+		}
+	}
+
+	&__tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.45rem;
+	}
+
+	&__tag {
+		font-size: 0.78rem;
+		padding: 0.28rem 0.55rem;
+		border-radius: 999px;
+		background: var(--surface-solid);
+		border: 1px solid var(--border);
+		color: var(--text);
+		font-weight: 500;
+	}
 }
 
-.bento-card {
-	border-radius: var(--radius-md);
-	border: 1px solid var(--border);
-	background: var(--surface);
-	padding: 1.15rem 1.25rem;
-	display: flex;
-	flex-direction: column;
-	gap: 0.75rem;
-	min-height: 140px;
-	transition: border-color 0.2s;
-}
-
-.bento-card:hover {
-	border-color: color-mix(in srgb, var(--accent-2) 40%, var(--border));
-}
-
-.bento-card h3 {
-	margin: 0;
-	font-size: 0.82rem;
-	font-weight: 700;
-	letter-spacing: 0.05em;
-	text-transform: uppercase;
-	color: var(--accent);
-}
-
-.tags {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.45rem;
-}
-
-.tag {
-	font-size: 0.78rem;
-	padding: 0.28rem 0.55rem;
-	border-radius: 999px;
-	background: var(--surface-solid);
-	border: 1px solid var(--border);
-	color: var(--text);
-	font-weight: 500;
-}
-
-:global([data-theme="dark"]) .tag {
+:global([data-theme="dark"]) .skills__tag {
 	background: color-mix(in srgb, var(--surface-solid) 88%, transparent);
 }
 </style>

@@ -1,16 +1,16 @@
 <template>
 	<header class="site-header">
-		<div class="header-inner">
+		<div class="site-header__inner">
 			<a
-				class="brand"
+				class="site-header__brand"
 				href="#top"
 				:aria-label="t('a11y.brandHome')"
 			>
-				<span class="brand-mark">{{ t('cv.brandMark') }}</span>
-				<span class="brand-text">{{ t('cv.brandName') }}</span>
+				<span class="site-header__brand-mark">{{ t('cv.brandMark') }}</span>
+				<span class="site-header__brand-text">{{ t('cv.brandName') }}</span>
 			</a>
 			<nav
-				class="nav"
+				class="site-header__nav"
 				:aria-label="t('a11y.mainNav')"
 			>
 				<a href="#perfil">{{ t('nav.profile') }}</a>
@@ -18,16 +18,16 @@
 				<a href="#habilidades">{{ t('nav.skills') }}</a>
 				<a href="#formacion">{{ t('nav.education') }}</a>
 			</nav>
-			<div class="header-actions">
+			<div class="site-header__actions">
 				<div
-					class="lang-switch"
+					class="site-header__lang-switch"
 					role="group"
 					:aria-label="t('a11y.language')"
 				>
 					<button
 						type="button"
-						class="lang-btn"
-						:class="{ 'is-active': locale === 'es' }"
+						class="site-header__lang-btn"
+						:class="{ 'site-header__lang-btn--active': locale === 'es' }"
 						:aria-pressed="locale === 'es'"
 						@click="setLocale('es')"
 					>
@@ -35,8 +35,8 @@
 					</button>
 					<button
 						type="button"
-						class="lang-btn"
-						:class="{ 'is-active': locale === 'en' }"
+						class="site-header__lang-btn"
+						:class="{ 'site-header__lang-btn--active': locale === 'en' }"
 						:aria-pressed="locale === 'en'"
 						@click="setLocale('en')"
 					>
@@ -45,7 +45,7 @@
 				</div>
 				<button
 					type="button"
-					class="icon-btn theme-toggle"
+					class="site-header__theme-toggle"
 					:aria-label="t('a11y.theme.ariaLabel')"
 					:title="t('a11y.theme.title')"
 					@click="toggleTheme"
@@ -137,151 +137,149 @@ onMounted(() => {
 	border-bottom: 1px solid var(--border);
 	background: color-mix(in srgb, var(--bg0) 82%, transparent);
 	backdrop-filter: blur(14px);
-}
 
-.header-inner {
-	max-width: 1120px;
-	margin: 0 auto;
-	padding: 0 1.25rem;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 1rem;
-}
-
-.brand {
-	display: flex;
-	align-items: center;
-	gap: 0.65rem;
-	text-decoration: none;
-	color: var(--text);
-	font-weight: 600;
-	flex-shrink: 0;
-}
-
-.brand-mark {
-	display: grid;
-	place-items: center;
-	width: 40px;
-	height: 40px;
-	border-radius: 12px;
-	background: linear-gradient(135deg, var(--accent), var(--accent-2));
-	color: #0c0a09;
-	font-size: 0.75rem;
-	font-weight: 700;
-	letter-spacing: -0.02em;
-}
-
-.brand-text {
-	font-family: var(--font-display);
-	font-size: 1.05rem;
-}
-
-.nav {
-	display: none;
-	gap: 1.25rem;
-	align-items: center;
-}
-
-@media (min-width: 900px) {
-	.nav {
+	&__inner {
+		max-width: 1120px;
+		margin: 0 auto;
+		padding: 0 1.25rem;
+		height: 100%;
 		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
 	}
-}
 
-.nav a {
-	color: var(--text-muted);
-	text-decoration: none;
-	font-size: 0.92rem;
-	font-weight: 500;
-	transition: color 0.2s var(--ease-out);
-}
+	&__brand {
+		display: flex;
+		align-items: center;
+		gap: 0.65rem;
+		text-decoration: none;
+		color: var(--text);
+		font-weight: 600;
+		flex-shrink: 0;
+	}
 
-.nav a:hover {
-	color: var(--text);
-}
+	&__brand-mark {
+		display: grid;
+		place-items: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 12px;
+		background: linear-gradient(135deg, var(--accent), var(--accent-2));
+		color: #0c0a09;
+		font-size: 0.75rem;
+		font-weight: 700;
+		letter-spacing: -0.02em;
+	}
 
-.header-actions {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-}
+	&__brand-text {
+		font-family: var(--font-display);
+		font-size: 1.05rem;
+	}
 
-.lang-switch {
-	display: flex;
-	border: 1px solid var(--border);
-	border-radius: 999px;
-	padding: 3px;
-	background: var(--surface);
-}
+	&__nav {
+		display: none;
+		gap: 1.25rem;
+		align-items: center;
 
-.lang-btn {
-	border: none;
-	background: transparent;
-	color: var(--text-muted);
-	font-family: inherit;
-	font-size: 0.78rem;
-	font-weight: 600;
-	letter-spacing: 0.04em;
-	padding: 0.35rem 0.65rem;
-	border-radius: 999px;
-	cursor: pointer;
-	transition: background 0.2s, color 0.2s;
-}
+		@media (min-width: 900px) {
+			display: flex;
+		}
 
-.lang-btn:hover {
-	color: var(--text);
-}
+		a {
+			color: var(--text-muted);
+			text-decoration: none;
+			font-size: 0.92rem;
+			font-weight: 500;
+			transition: color 0.2s var(--ease-out);
 
-.lang-btn.is-active {
-	background: var(--accent-soft);
-	color: var(--accent);
-}
+			&:hover {
+				color: var(--text);
+			}
+		}
+	}
 
-.icon-btn {
-	width: 42px;
-	height: 42px;
-	border-radius: 12px;
-	border: 1px solid var(--border);
-	background: var(--surface);
-	cursor: pointer;
-	display: grid;
-	place-items: center;
-	color: var(--text);
-	transition: border-color 0.2s, transform 0.15s;
-}
+	&__actions {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
 
-.icon-btn:hover {
-	border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
-}
+	&__lang-switch {
+		display: flex;
+		border: 1px solid var(--border);
+		border-radius: 999px;
+		padding: 3px;
+		background: var(--surface);
+	}
 
-.icon-btn:active {
-	transform: scale(0.96);
-}
+	&__lang-btn {
+		border: none;
+		background: transparent;
+		color: var(--text-muted);
+		font-family: inherit;
+		font-size: 0.78rem;
+		font-weight: 600;
+		letter-spacing: 0.04em;
+		padding: 0.35rem 0.65rem;
+		border-radius: 999px;
+		cursor: pointer;
+		transition: background 0.2s, color 0.2s;
 
-.icon-btn:focus-visible {
-	outline: none;
-	box-shadow: var(--ring-focus);
-}
+		&:hover {
+			color: var(--text);
+		}
 
-.theme-icon {
-	width: 20px;
-	height: 20px;
-	display: block;
-	background: currentColor;
-	mask-size: contain;
-	mask-repeat: no-repeat;
-	mask-position: center;
-}
+		&--active {
+			background: var(--accent-soft);
+			color: var(--accent);
+		}
+	}
 
-.theme-icon--sun {
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='black' stroke-width='2'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath d='M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41'/%3E%3C/svg%3E");
-}
+	&__theme-toggle {
+		width: 42px;
+		height: 42px;
+		border-radius: 12px;
+		border: 1px solid var(--border);
+		background: var(--surface);
+		cursor: pointer;
+		display: grid;
+		place-items: center;
+		color: var(--text);
+		transition: border-color 0.2s, transform 0.15s;
 
-.theme-icon--moon {
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='black' stroke-width='2'%3E%3Cpath d='M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z'/%3E%3C/svg%3E");
+		&:hover {
+			border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+		}
+
+		&:active {
+			transform: scale(0.96);
+		}
+
+		&:focus-visible {
+			outline: none;
+			box-shadow: var(--ring-focus);
+		}
+	}
+
+	.theme-icon {
+		width: 20px;
+		height: 20px;
+		display: block;
+		background: currentColor;
+		mask-size: contain;
+		mask-repeat: no-repeat;
+		mask-position: center;
+
+		&--sun {
+			mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='black' stroke-width='2'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath d='M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41'/%3E%3C/svg%3E");
+		}
+
+		&--moon {
+			mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='black' stroke-width='2'%3E%3Cpath d='M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z'/%3E%3C/svg%3E");
+		}
+	}
 }
 </style>
