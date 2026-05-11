@@ -66,8 +66,24 @@
 					class="btn btn--outline btn--sm site-header__cv-btn"
 					:href="cvHref"
 					:download="cvDownloadFilename"
+					:aria-label="t('header.downloadCv')"
+					:title="t('header.downloadCv')"
 				>
-					{{ t('header.downloadCv') }}
+					<svg
+						class="site-header__cv-icon"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="1.9"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						aria-hidden="true"
+					>
+						<path d="M12 3v11" />
+						<path d="M8.5 10.5 12 14l3.5-3.5" />
+						<path d="M5 18h14" />
+					</svg>
+					<span class="site-header__cv-label">{{ t('header.downloadCv') }}</span>
 				</a>
 			</div>
 		</div>
@@ -148,6 +164,10 @@ function toggleTheme() {
 	&__brand-text {
 		font-family: var(--font-display);
 		font-size: 1.05rem;
+
+		@media (max-width: 640px) {
+			font-size: 0.96rem;
+		}
 	}
 
 	&__nav {
@@ -178,6 +198,11 @@ function toggleTheme() {
 		gap: 0.5rem;
 		flex-wrap: wrap;
 		justify-content: flex-end;
+
+		@media (max-width: 640px) {
+			flex-wrap: nowrap;
+			gap: 0.35rem;
+		}
 	}
 
 	&__lang-switch {
@@ -186,6 +211,10 @@ function toggleTheme() {
 		border-radius: 999px;
 		padding: 3px;
 		background: var(--surface);
+
+		@media (max-width: 640px) {
+			padding: 2px;
+		}
 	}
 
 	&__lang-btn {
@@ -200,6 +229,11 @@ function toggleTheme() {
 		border-radius: 999px;
 		cursor: pointer;
 		transition: background 0.2s, color 0.2s;
+
+		@media (max-width: 640px) {
+			font-size: 0.72rem;
+			padding: 0.28rem 0.52rem;
+		}
 
 		&:hover {
 			color: var(--text);
@@ -235,6 +269,12 @@ function toggleTheme() {
 			outline: none;
 			box-shadow: var(--ring-focus);
 		}
+
+		@media (max-width: 640px) {
+			width: 36px;
+			height: 36px;
+			border-radius: 10px;
+		}
 	}
 
 	&__theme-icon {
@@ -256,12 +296,36 @@ function toggleTheme() {
 	}
 
 	&__cv-btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.45rem;
 		border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
 		color: var(--text);
 
 		&:hover {
 			border-color: color-mix(in srgb, var(--accent) 68%, var(--border));
 			background: color-mix(in srgb, var(--accent-soft) 35%, var(--surface));
+		}
+
+		@media (max-width: 640px) {
+			width: 34px;
+			height: 34px;
+			min-width: 34px;
+			padding: 0;
+			border-radius: 10px;
+		}
+	}
+
+	&__cv-icon {
+		width: 16px;
+		height: 16px;
+		flex-shrink: 0;
+	}
+
+	&__cv-label {
+		@media (max-width: 640px) {
+			display: none;
 		}
 	}
 }

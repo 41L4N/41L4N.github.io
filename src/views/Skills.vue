@@ -118,9 +118,8 @@ const categories = [
 			'skills.categories.ai.cursor',
 			'skills.categories.ai.gemini',
 			'skills.categories.ai.agents',
-			'skills.categories.ai.prompting',
-			'skills.categories.ai.stackConfig',
-			'skills.categories.ai.notebooksGems',
+			'skills.categories.ai.prompts',
+			'skills.categories.ai.stackSetup',
 		],
 	},
 	{

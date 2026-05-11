@@ -164,12 +164,11 @@
 			},
 			"ai": {
 				"name": "IA aplicada al desarrollo",
-				"cursor": "Cursor (uso diario en desarrollo)",
-				"gemini": "Gemini para análisis y apoyo técnico",
-				"agents": "Uso de agentes para tareas repetitivas",
-				"prompting": "Prompting enfocado en código y documentación",
-				"stackConfig": "Configuración asistida de stacks y flujos",
-				"notebooksGems": "Cuadernos/Gems para organización y contexto"
+				"cursor": "Cursor",
+				"gemini": "Gemini",
+				"agents": "Agentes",
+				"prompts": "Prompts técnicos",
+				"stackSetup": "Setup de stack"
 			}
 		}
 	},

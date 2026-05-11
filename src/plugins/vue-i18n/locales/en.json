@@ -164,12 +164,11 @@
 			},
 			"ai": {
 				"name": "AI-assisted development",
-				"cursor": "Cursor (daily development usage)",
-				"gemini": "Gemini for analysis and technical support",
-				"agents": "Agent workflows for repetitive tasks",
-				"prompting": "Prompting focused on code and docs",
-				"stackConfig": "Assisted stack and workflow configuration",
-				"notebooksGems": "Notebooks/Gems for context organization"
+				"cursor": "Cursor",
+				"gemini": "Gemini",
+				"agents": "Agents",
+				"prompts": "Technical prompting",
+				"stackSetup": "Stack setup"
 			}
 		}
 	},

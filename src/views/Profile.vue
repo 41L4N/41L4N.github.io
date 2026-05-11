@@ -85,9 +85,9 @@ const languageEntries = [
 		border-radius: var(--radius-md);
 		padding: 0.72rem 0.85rem;
 		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 0.7rem;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.25rem;
 		color: var(--text-muted);
 		box-shadow: var(--shadow-sm);
 		position: relative;
@@ -111,14 +111,10 @@ const languageEntries = [
 	}
 
 	&__languages-level {
-		font-size: 0.82rem;
-		font-weight: 500;
+		font-size: 0.84rem;
+		font-weight: 400;
 		color: var(--text-muted);
-		background: color-mix(in srgb, var(--accent-soft) 55%, var(--surface-solid));
-		border: 1px solid color-mix(in srgb, var(--accent) 18%, var(--border));
-		border-radius: 999px;
-		padding: 0.2rem 0.55rem;
-		white-space: nowrap;
+		line-height: 1.35;
 	}
 }
 </style>

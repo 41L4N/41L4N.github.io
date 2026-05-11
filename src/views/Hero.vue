@@ -176,16 +176,21 @@ const statRingCssVars = {
 
 	&__eyebrow {
 		display: inline-block;
-		font-size: 0.8rem;
+		font-size: clamp(0.68rem, 1.9vw, 0.8rem);
 		font-weight: 600;
-		letter-spacing: 0.06em;
+		letter-spacing: clamp(0.02em, 0.22vw, 0.06em);
+		line-height: 1.25;
 		text-transform: uppercase;
 		color: var(--accent-2);
 		margin: 0 0 1rem;
-		padding: 0.35rem 0.75rem;
+		padding: clamp(0.28rem, 1vw, 0.35rem) clamp(0.6rem, 2.4vw, 0.75rem);
 		border-radius: 999px;
 		background: var(--accent-2-soft);
 		border: 1px solid color-mix(in srgb, var(--accent-2) 35%, transparent);
+
+		@media (max-width: 640px) {
+			max-width: 100%;
+		}
 	}
 
 	&__title {
