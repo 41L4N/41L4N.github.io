@@ -1,0 +1,208 @@
+{
+	"cv": {
+		"title": "Ailan Ñañez · Full-Stack Developer",
+		"brandMark": "AÑ",
+		"brandName": "Ailan Ñañez"
+	},
+	"locale": {
+		"es": "ES",
+		"en": "EN"
+	},
+	"meta": {
+		"description": "Ailan Alberto Ñañez — Full-Stack Developer. Laravel, Vue.js, React, Node.js."
+	},
+	"a11y": {
+		"skipToContent": "Skip to content",
+		"brandHome": "Home",
+		"mainNav": "Main",
+		"language": "Language",
+		"theme": {
+			"ariaLabel": "Toggle theme",
+			"title": "Theme"
+		},
+		"heroCard": "Quick summary",
+		"cvSections": "Résumé sections"
+	},
+	"nav": {
+		"profile": "Profile",
+		"experience": "Experience",
+		"skills": "Skills",
+		"education": "Education"
+	},
+	"header": {
+		"downloadCv": "Download CV",
+		"cvPdfEs": "PDF in Spanish",
+		"cvPdfEn": "PDF in English",
+		"fileExtension": ".pdf"
+	},
+	"hero": {
+		"eyebrow": "Available for projects and remote teams",
+		"name": "Ailan Alberto Ñañez",
+		"role": "Full-Stack Developer",
+		"tagline": "Laravel · Vue.js · React · Node.js",
+		"lead": "Eight years building scalable web applications, APIs, and systems with a strong focus on quality and documentation.",
+		"ctaWrite": "Email me",
+		"ctaGithub": "GitHub",
+		"ctaLinkedin": "LinkedIn",
+		"ctaCopyEmail": "Copy email",
+		"location": "Caracas, Venezuela",
+		"statYears": "years",
+		"statYearsNum": "8+",
+		"highlights": {
+			"infra": "Critical infrastructure and high traffic",
+			"leadership": "Technical leadership and mentoring",
+			"practices": "SOLID, Clean Code, documentation"
+		}
+	},
+	"profile": {
+		"title": "Professional profile",
+		"kicker": "More than a PDF: live context",
+		"intro": "Full-Stack Developer with 8 years of experience building scalable, high-performance web applications. Specialized in the Laravel/PHP ecosystem for backend and Vue.js/React for frontend, with solid experience in robust architectures, RESTful APIs, database optimization, and technical team leadership.",
+		"commitment": "Committed to code quality through SOLID principles, Clean Code, and rigorous technical documentation. Proven experience in critical infrastructure, e-commerce, and enterprise management projects, working with agile methodologies in remote and hybrid environments."
+	},
+	"experience": {
+		"title": "Experience",
+		"kicker": "Interactive timeline",
+		"freelance": {
+			"role": "Full-Stack Freelance Developer",
+			"company": "Self-employed / Private clients",
+			"period": "Jun 2018 – Present",
+			"bullet1": "Full-stack web development with Laravel, Vue.js (Quasar, Vuetify), and React.",
+			"bullet2": "Scalable architectures for management, e-commerce, and educational applications.",
+			"bullet3": "Performance and UX optimization in medium- and high-complexity projects.",
+			"bullet4": "Full lifecycle: requirements, development, deployment, and post-delivery support.",
+			"bullet5": "Integration of APIs, payment gateways, and third-party services."
+		},
+		"prolesys": {
+			"role": "Web Developer",
+			"company": "Prolesys Consultores C.A.",
+			"period": "Jun 2022 – Apr 2025",
+			"bullet1": "Critical systems for national infrastructure: security and high availability.",
+			"bullet2": "Technical leadership on robust architectures and development standards.",
+			"bullet3": "Optimization in high-traffic applications: response times and stability.",
+			"bullet4": "Team management and mentoring: Clean Code, SOLID, code review, and documentation.",
+			"bullet5": "Design and consumption of REST APIs for integration with external systems."
+		},
+		"sismg": {
+			"role": "Web Developer",
+			"company": "SISMG Chile",
+			"period": "Jun 2022 – Apr 2025",
+			"bullet1": "Software modules for the Chilean market, coordination with remote teams.",
+			"bullet2": "Frontend with Vue.js and React, cross-browser compatibility and performance.",
+			"bullet3": "Integration with PHP/Laravel and Node.js backends via REST.",
+			"bullet4": "Scrum/Kanban and continuous delivery in sprints."
+		},
+		"goldtech": {
+			"role": "Web Developer",
+			"company": "GoldTech",
+			"period": "Mar 2021 – Nov 2021",
+			"bullet1": "Data management modules for enterprise systems.",
+			"bullet2": "Performance improvements: ~40% faster load times (SQL + cache).",
+			"bullet3": "REST APIs for integration with external systems.",
+			"bullet4": "Legacy module refactoring: maintainability and scalability."
+		},
+		"homines": {
+			"role": "Web Developer",
+			"company": "Corporación Homines",
+			"period": "Sep 2019 – Feb 2021",
+			"bullet1": "Data management modules for internal corporate systems.",
+			"bullet2": "Microservices: modularity and scalability.",
+			"bullet3": "Responsive interfaces with Vue.js, HTML5, CSS3, and JavaScript.",
+			"bullet4": "Migration from legacy to modern technologies, reducing technical debt."
+		}
+	},
+	"skills": {
+		"title": "Technical skills",
+		"kicker": "Ecosystem and practices",
+		"categories": {
+			"frontend": {
+				"name": "Frontend",
+				"vueQuasar": "Vue.js (Quasar, Vuetify)",
+				"reactMui": "React (Material UI)",
+				"next": "Next.js",
+				"html5": "HTML5",
+				"cssSass": "CSS3 / SASS",
+				"bootstrap": "Bootstrap",
+				"javascript": "JavaScript",
+				"typescript": "TypeScript",
+				"jquery": "jQuery"
+			},
+			"backend": {
+				"name": "Backend",
+				"phpLaravel": "PHP / Laravel",
+				"rails": "Ruby on Rails",
+				"node": "Node.js",
+				"typescript": "TypeScript"
+			},
+			"databases": {
+				"name": "Databases",
+				"mysql": "MySQL",
+				"relational": "Relational design",
+				"sqlOpt": "SQL query optimization"
+			},
+			"apis": {
+				"name": "APIs and integrations",
+				"rest": "REST APIs",
+				"payments": "Payment gateways",
+				"external": "External services"
+			},
+			"infra": {
+				"name": "Infrastructure",
+				"gcp": "Google Cloud",
+				"hostinger": "Hostinger",
+				"cpanel": "cPanel",
+				"git": "Git",
+				"github": "GitHub",
+				"gitlab": "GitLab"
+			},
+			"practices": {
+				"name": "Practices",
+				"solid": "SOLID",
+				"cleanCode": "Clean Code",
+				"scrum": "Scrum",
+				"kanban": "Kanban",
+				"cicd": "CI/CD",
+				"codeReview": "Code review",
+				"docs": "Technical documentation"
+			}
+		}
+	},
+	"education": {
+		"title": "Education and training",
+		"fullstack": {
+			"title": "Full-Stack Development — PHP, Laravel, Vue.js, React",
+			"meta": "2016 – Present",
+			"source": "Self-taught · Udemy / Platzi / Official documentation",
+			"description": "Continuous training in modern web development, software architectures, and programming best practices."
+		},
+		"cloud": {
+			"title": "Cloud Hosting & DevOps — Google Cloud, cPanel, Hostinger",
+			"meta": "2020 – Present",
+			"source": "Self-taught · Google Cloud Skills Boost / Community",
+			"description": "Hosting environment administration, server configuration, and deployment of web applications to production."
+		}
+	},
+	"languages": {
+		"title": "Languages",
+		"spanish": {
+			"name": "Spanish",
+			"level": "Native."
+		},
+		"english": {
+			"name": "English",
+			"level": "Basic — reading technical documentation."
+		}
+	},
+	"footer": {
+		"crafted": "Hand-crafted with HTML, CSS, and JS",
+		"sourceCode": "Source code"
+	},
+	"toast": {
+		"emailCopied": "Email copied to clipboard"
+	},
+	"badges": {
+		"rest": "REST",
+		"cicd": "CI/CD",
+		"mysql": "MySQL"
+	}
+}
