@@ -26,17 +26,19 @@
 				>
 					<button
 						type="button"
-						class="lang-btn is-active"
-						data-lang="es"
-						aria-pressed="true"
+						class="lang-btn"
+						:class="{ 'is-active': locale === 'es' }"
+						:aria-pressed="locale === 'es'"
+						@click="setLocale('es')"
 					>
 						{{ t('locale.es') }}
 					</button>
 					<button
 						type="button"
 						class="lang-btn"
-						data-lang="en"
-						aria-pressed="false"
+						:class="{ 'is-active': locale === 'en' }"
+						:aria-pressed="locale === 'en'"
+						@click="setLocale('en')"
 					>
 						{{ t('locale.en') }}
 					</button>
@@ -46,6 +48,7 @@
 					class="icon-btn theme-toggle"
 					:aria-label="t('a11y.theme.ariaLabel')"
 					:title="t('a11y.theme.title')"
+					@click="toggleTheme"
 				>
 					<span
 						class="theme-icon theme-icon--sun"
@@ -98,9 +101,52 @@
 </template>
 
 <script setup>
+import { onMounted, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 
-const { t } = useI18n();
+const LOCALE_STORAGE_KEY = 'site-locale';
+const THEME_STORAGE_KEY = 'site-theme';
+
+const { t, locale } = useI18n();
+
+function setLocale(code) {
+	locale.value = code;
+	localStorage.setItem(LOCALE_STORAGE_KEY, code);
+}
+
+watch(
+	locale,
+	(l) => {
+		document.documentElement.setAttribute('lang', l === 'es' ? 'es' : 'en');
+	},
+	{ immediate: true },
+);
+
+function applyDataTheme(mode) {
+	document.documentElement.setAttribute('data-theme', mode);
+}
+
+function initThemeFromStorageOrSystem() {
+	const stored = localStorage.getItem(THEME_STORAGE_KEY);
+	const mode =
+		stored === 'light' || stored === 'dark'
+			? stored
+			: window.matchMedia('(prefers-color-scheme: dark)').matches
+				? 'dark'
+				: 'light';
+	applyDataTheme(mode);
+}
+
+function toggleTheme() {
+	const next =
+		document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+	applyDataTheme(next);
+	localStorage.setItem(THEME_STORAGE_KEY, next);
+}
+
+onMounted(() => {
+	initThemeFromStorageOrSystem();
+});
 </script>
 
 <style lang="scss" scoped>
