@@ -27,7 +27,7 @@
 		"profile": "Profile",
 		"experience": "Experience",
 		"skills": "Skills",
-		"projectWorkflow": "GitFlow"
+		"projectWorkflow": "Workflow"
 	},
 	"header": {
 		"downloadCv": "Download CV"
@@ -164,7 +164,7 @@
 		}
 	},
 	"projectWorkflow": {
-		"title": "GitFlow",
+		"title": "Workflow",
 		"kicker": "Agility, Issues, Projects, and environments",
 		"primary": "GitHub Projects and Issues as the workflow backbone, with living documentation and sprint visibility in GitHub through pull requests and continuous tracking.",
 		"secondary": "Clear delivery environments (dev, QA, staging, prod) and, when needed, support from Scrum, Jira, and Confluence."
