@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ailan Alberto Ñañez — Full-Stack Developer. Laravel, Vue.js, React, Node.js." />
+    <title>Ailan Ñañez · Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("cv-theme");
+          if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contenido</a>
+
+    <div class="noise" aria-hidden="true"></div>
+    <div class="orb orb-a" aria-hidden="true"></div>
+    <div class="orb orb-b" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Inicio">
+          <span class="brand-mark">AÑ</span>
+          <span class="brand-text">Ailan Ñañez</span>
+        </a>
+        <nav class="nav" aria-label="Principal">
+          <a href="#perfil" data-i18n="nav.profile">Perfil</a>
+          <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+          <a href="#habilidades" data-i18n="nav.skills">Habilidades</a>
+          <a href="#formacion" data-i18n="nav.education">Formación</a>
+        </nav>
+        <div class="header-actions">
+          <div class="lang-switch" role="group" aria-label="Idioma">
+            <button type="button" class="lang-btn is-active" data-lang="es" aria-pressed="true">ES</button>
+            <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <button type="button" class="icon-btn theme-toggle" aria-label="Cambiar tema" title="Tema">
+            <span class="theme-icon theme-icon--sun" aria-hidden="true"></span>
+            <span class="theme-icon theme-icon--moon" aria-hidden="true"></span>
+          </button>
+          <div class="downloads" data-dropdown>
+            <button type="button" class="btn btn--ghost btn--sm" data-dropdown-trigger aria-expanded="false" aria-haspopup="true" data-i18n="nav.download">
+              Descargar CV
+            </button>
+            <div class="downloads-panel" data-dropdown-panel hidden>
+              <a class="downloads-item" href="assets/cv-es.pdf" download="Ailan-Nanez-CV-ES.pdf">
+                <span class="downloads-item__label" data-i18n="download.es">PDF en español</span>
+                <span class="downloads-item__meta">.pdf</span>
+              </a>
+              <a class="downloads-item" href="assets/cv-en.pdf" download="Ailan-Nanez-CV-EN.pdf">
+                <span class="downloads-item__label" data-i18n="download.en">PDF in English</span>
+                <span class="downloads-item__meta">.pdf</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Disponible para proyectos y equipos remotos</p>
+            <h1 class="hero-title">
+              <span class="hero-name">Ailan Alberto Ñañez</span>
+              <span class="hero-role" data-i18n="hero.role">Desarrollador Full-Stack</span>
+            </h1>
+            <p class="hero-tagline" data-i18n="hero.tagline">Laravel · Vue.js · React · Node.js</p>
+            <p class="hero-lead" data-i18n="hero.lead">
+              Ocho años construyendo aplicaciones web escalables, APIs y sistemas con exigencia de calidad.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn--primary" href="mailto:ailanruiz1994@gmail.com" data-i18n="hero.ctaEmail">Escribirme</a>
+              <a class="btn btn--outline" href="https://github.com/41L4N" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="btn btn--outline" href="https://www.linkedin.com/in/ailan-alberto-nanez" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <button type="button" class="btn btn--ghost copy-email" data-email="ailanruiz1994@gmail.com" data-i18n="hero.copyEmail">
+                Copiar email
+              </button>
+            </div>
+            <p class="hero-meta">
+              <span data-i18n="hero.location">Caracas, Venezuela</span>
+              <span class="dot" aria-hidden="true"></span>
+              <a href="tel:+584241306799">+58 424-1306799</a>
+            </p>
+            <nav class="nav-mobile" data-i18n-aria="nav.sectionsNav" aria-label="Secciones">
+              <a href="#perfil" data-i18n="nav.profile">Perfil</a>
+              <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+              <a href="#habilidades" data-i18n="nav.skills">Habilidades</a>
+              <a href="#formacion" data-i18n="nav.education">Formación</a>
+            </nav>
+          </div>
+          <aside class="hero-card" aria-label="Resumen rápido">
+            <div class="stat-ring">
+              <svg viewBox="0 0 120 120" class="stat-ring__svg" aria-hidden="true">
+                <circle class="stat-ring__track" cx="60" cy="60" r="52" />
+                <circle class="stat-ring__progress" cx="60" cy="60" r="52" />
+              </svg>
+              <div class="stat-ring__label">
+                <span class="stat-ring__num">8+</span>
+                <span class="stat-ring__cap" data-i18n="hero.statYears">años</span>
+              </div>
+            </div>
+            <ul class="hero-highlights">
+              <li data-i18n="hero.h1">Infraestructura crítica y alto tráfico</li>
+              <li data-i18n="hero.h2">Liderazgo técnico y mentoría</li>
+              <li data-i18n="hero.h3">SOLID, Clean Code, documentación</li>
+            </ul>
+            <div class="hero-badges" aria-hidden="true">
+              <span class="pill">REST</span>
+              <span class="pill">CI/CD</span>
+              <span class="pill">MySQL</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section--profile reveal" id="perfil">
+        <div class="section-head">
+          <h2 data-i18n="profile.title">Perfil profesional</h2>
+          <p class="section-kicker" data-i18n="profile.kicker">Más que un PDF: contexto vivo</p>
+        </div>
+        <div class="prose profile-prose">
+          <p data-i18n="profile.p1"></p>
+          <p data-i18n="profile.p2"></p>
+        </div>
+      </section>
+
+      <section class="section section--experience reveal" id="experiencia">
+        <div class="section-head">
+          <h2 data-i18n="exp.title">Experiencia</h2>
+          <p class="section-kicker" data-i18n="exp.kicker">Línea de tiempo interactiva</p>
+        </div>
+        <div class="timeline" id="experience-root"></div>
+      </section>
+
+      <section class="section section--skills reveal" id="habilidades">
+        <div class="section-head">
+          <h2 data-i18n="skills.title">Habilidades técnicas</h2>
+          <p class="section-kicker" data-i18n="skills.kicker">Ecosistema y prácticas</p>
+        </div>
+        <div class="bento" id="skills-root"></div>
+      </section>
+
+      <section class="section section--education reveal" id="formacion">
+        <div class="section-head">
+          <h2 data-i18n="edu.title">Formación y capacitación</h2>
+        </div>
+        <div class="cards-edu" id="education-root"></div>
+      </section>
+
+      <section class="section section--languages reveal" id="idiomas">
+        <div class="section-head">
+          <h2 data-i18n="lang.title">Idiomas</h2>
+        </div>
+        <div class="lang-cards">
+          <article class="lang-card">
+            <h3 data-i18n="lang.esTitle">Español</h3>
+            <p data-i18n="lang.esLevel">Nativo.</p>
+          </article>
+          <article class="lang-card">
+            <h3 data-i18n="lang.enTitle">Inglés</h3>
+            <p data-i18n="lang.enLevel">Nivel básico — lectura de documentación técnica.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <span data-i18n="footer.built">Hecho a mano con HTML, CSS y JS</span>
+        ·
+        <a href="https://github.com/41L4N/41L4N.github.io" target="_blank" rel="noopener noreferrer" data-i18n="footer.source">Código fuente</a>
+      </p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
