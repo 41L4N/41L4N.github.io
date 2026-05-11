@@ -14,6 +14,7 @@
 				:aria-label="t('a11y.mainNav')"
 			>
 				<a href="#profile">{{ t('nav.profile') }}</a>
+				<a href="#ai">{{ t('nav.ai') }}</a>
 				<a href="#experience">{{ t('nav.experience') }}</a>
 				<a href="#skills">{{ t('nav.skills') }}</a>
 				<a href="#project-workflow">{{ t('nav.projectWorkflow') }}</a>

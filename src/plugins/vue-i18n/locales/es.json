@@ -25,6 +25,7 @@
 	},
 	"nav": {
 		"profile": "Perfil",
+		"ai": "IA",
 		"experience": "Experiencia",
 		"skills": "Habilidades",
 		"projectWorkflow": "Flujo",
@@ -161,15 +162,18 @@
 				"cicd": "CI/CD",
 				"codeReview": "Revisión de código",
 				"docs": "Documentación técnica"
-			},
-			"ai": {
-				"name": "IA aplicada al desarrollo",
-				"cursor": "Cursor",
-				"gemini": "Gemini",
-				"agents": "Agentes",
-				"prompts": "Prompts técnicos",
-				"stackSetup": "Setup de stack"
 			}
+		}
+	},
+	"aiSection": {
+		"title": "IA aplicada al desarrollo",
+		"lead": "Uso IA de forma práctica para acelerar análisis, implementación y documentación, manteniendo criterio técnico y revisión manual en las decisiones importantes.",
+		"items": {
+			"cursor": "Cursor",
+			"gemini": "Gemini",
+			"agents": "Agentes",
+			"prompts": "Prompts técnicos",
+			"stackSetup": "Setup de stack"
 		}
 	},
 	"projectWorkflow": {

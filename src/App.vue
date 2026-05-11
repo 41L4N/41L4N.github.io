@@ -4,6 +4,7 @@
 	<main id="main">
 		<Hero />
 		<Profile />
+		<AISection />
 		<Skills />
 		<ProjectWorkflow />
 		<Projects />
@@ -17,6 +18,7 @@
 <script setup>
 import { nextTick, onMounted, provide, ref } from 'vue';
 
+import AISection from '@/views/AISection.vue';
 import Experience from '@/views/Experience.vue';
 import Hero from '@/views/Hero.vue';
 import Languages from '@/views/Languages.vue';

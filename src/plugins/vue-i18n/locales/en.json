@@ -25,6 +25,7 @@
 	},
 	"nav": {
 		"profile": "Profile",
+		"ai": "AI",
 		"experience": "Experience",
 		"skills": "Skills",
 		"projectWorkflow": "Workflow",
@@ -161,15 +162,18 @@
 				"cicd": "CI/CD",
 				"codeReview": "Code review",
 				"docs": "Technical documentation"
-			},
-			"ai": {
-				"name": "AI-assisted development",
-				"cursor": "Cursor",
-				"gemini": "Gemini",
-				"agents": "Agents",
-				"prompts": "Technical prompting",
-				"stackSetup": "Stack setup"
 			}
+		}
+	},
+	"aiSection": {
+		"title": "AI-assisted development",
+		"lead": "I use AI pragmatically to speed up analysis, implementation, and documentation, while keeping technical judgment and manual review for key decisions.",
+		"items": {
+			"cursor": "Cursor",
+			"gemini": "Gemini",
+			"agents": "Agents",
+			"prompts": "Technical prompting",
+			"stackSetup": "Stack setup"
 		}
 	},
 	"projectWorkflow": {
