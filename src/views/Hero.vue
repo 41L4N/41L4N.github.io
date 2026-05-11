@@ -198,7 +198,7 @@ const statRingCssVars = {
 
 	&__name {
 		display: block;
-		background: linear-gradient(120deg, var(--text) 0%, var(--text-muted) 100%);
+		background: var(--hero-name-grad);
 		-webkit-background-clip: text;
 		background-clip: text;
 		color: transparent;
@@ -211,6 +211,7 @@ const statRingCssVars = {
 		font-weight: 500;
 		color: var(--accent);
 		font-style: italic;
+		text-shadow: 0 0 42px color-mix(in srgb, var(--accent) 28%, transparent);
 	}
 
 	&__tagline {
@@ -290,10 +291,10 @@ const statRingCssVars = {
 	&__card {
 		border-radius: var(--radius-lg);
 		padding: 1.5rem;
-		border: 1px solid var(--border);
+		border: 1px solid color-mix(in srgb, var(--accent) 14%, var(--border));
 		background: var(--surface);
 		backdrop-filter: blur(12px);
-		box-shadow: var(--shadow-sm);
+		box-shadow: var(--shadow-sm), var(--neon-ambient);
 
 		svg defs {
 			display: none;
@@ -329,12 +330,6 @@ const statRingCssVars = {
 	}
 }
 
-:global([data-theme="dark"]) .hero__name {
-	background: linear-gradient(120deg, #fff 0%, #d6d3d1 100%);
-	-webkit-background-clip: text;
-	background-clip: text;
-}
-
 .stat-ring {
 	--stat-ring-c: 326.73;
 	--stat-ring-off: 65.35;
@@ -363,6 +358,7 @@ const statRingCssVars = {
 		stroke-dasharray: var(--stat-ring-c);
 		stroke-dashoffset: var(--stat-ring-off);
 		animation: ringFill 1.4s var(--ease-out) forwards;
+		filter: var(--stat-ring-glow);
 	}
 
 	&__label {

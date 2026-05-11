@@ -120,8 +120,9 @@ const jobs = [
 		bottom: 6px;
 		width: 2px;
 		background: linear-gradient(var(--accent), var(--accent-2));
-		opacity: 0.35;
+		opacity: 0.45;
 		border-radius: 2px;
+		box-shadow: 0 0 14px color-mix(in srgb, var(--accent-2) 35%, transparent);
 
 		@media (min-width: 640px) {
 			left: 15px;
@@ -146,7 +147,9 @@ const jobs = [
 		border-radius: 50%;
 		background: var(--surface-solid);
 		border: 3px solid var(--accent);
-		box-shadow: 0 0 0 4px var(--accent-soft);
+		box-shadow:
+			0 0 0 4px var(--accent-soft),
+			0 0 14px color-mix(in srgb, var(--accent) 32%, transparent);
 
 		@media (min-width: 640px) {
 			left: 8px;

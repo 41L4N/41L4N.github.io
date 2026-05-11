@@ -73,7 +73,7 @@ const { t } = useI18n();
 		z-index: 9999;
 		padding: 0.75rem 1rem;
 		background: var(--accent);
-		color: #0c0a09;
+		color: var(--btn-primary-fg);
 		font-weight: 600;
 		border-radius: var(--radius-sm);
 

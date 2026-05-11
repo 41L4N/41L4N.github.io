@@ -137,7 +137,7 @@ function toggleTheme() {
 		height: 40px;
 		border-radius: 12px;
 		background: linear-gradient(135deg, var(--accent), var(--accent-2));
-		color: #0c0a09;
+		color: var(--btn-primary-fg);
 		font-size: 0.75rem;
 		font-weight: 700;
 		letter-spacing: -0.02em;
