@@ -59,55 +59,34 @@
 						aria-hidden="true"
 					/>
 				</button>
-				<div
-					class="downloads"
-					data-dropdown
+				<a
+					class="btn btn--ghost btn--sm"
+					:href="cvHref"
+					:download="cvDownloadFilename"
 				>
-					<button
-						type="button"
-						class="btn btn--ghost btn--sm"
-						data-dropdown-trigger
-						aria-expanded="false"
-						aria-haspopup="true"
-					>
-						{{ t('header.downloadCv') }}
-					</button>
-					<div
-						class="downloads-panel"
-						data-dropdown-panel
-						hidden
-					>
-						<a
-							class="downloads-item"
-							href="/assets/cv-es.pdf"
-							download="Ailan-Nanez-CV-ES.pdf"
-						>
-							<span class="downloads-item__label">{{ t('header.cvPdfEs') }}</span>
-							<span class="downloads-item__meta">{{ t('header.fileExtension') }}</span>
-						</a>
-						<a
-							class="downloads-item"
-							href="/assets/cv-en.pdf"
-							download="Ailan-Nanez-CV-EN.pdf"
-						>
-							<span class="downloads-item__label">{{ t('header.cvPdfEn') }}</span>
-							<span class="downloads-item__meta">{{ t('header.fileExtension') }}</span>
-						</a>
-					</div>
-				</div>
+					{{ t('header.downloadCv') }}
+				</a>
 			</div>
 		</div>
 	</header>
 </template>
 
 <script setup>
-import { onMounted, watch } from 'vue';
+import { computed, onMounted, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
+
+import cvEnUrl from '@/assets/files/cv-en.pdf?url';
+import cvEsUrl from '@/assets/files/cv-es.pdf?url';
 
 const LOCALE_STORAGE_KEY = 'site-locale';
 const THEME_STORAGE_KEY = 'site-theme';
 
 const { t, locale } = useI18n();
+
+const cvHref = computed(() => (locale.value === 'es' ? cvEsUrl : cvEnUrl));
+const cvDownloadFilename = computed(() =>
+	locale.value === 'es' ? 'Ailan-Nanez-CV-ES.pdf' : 'Ailan-Nanez-CV-EN.pdf',
+);
 
 function setLocale(code) {
 	locale.value = code;
@@ -304,52 +283,5 @@ onMounted(() => {
 
 .theme-icon--moon {
 	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='black' stroke-width='2'%3E%3Cpath d='M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z'/%3E%3C/svg%3E");
-}
-
-.downloads {
-	position: relative;
-}
-
-.downloads-panel {
-	position: absolute;
-	right: 0;
-	top: calc(100% + 8px);
-	min-width: 220px;
-	padding: 0.4rem;
-	border-radius: var(--radius-md);
-	border: 1px solid var(--border);
-	background: var(--surface-solid);
-	box-shadow: var(--shadow-md);
-	z-index: 50;
-}
-
-.downloads-panel[hidden] {
-	display: none;
-}
-
-.downloads-item {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 0.75rem;
-	padding: 0.65rem 0.75rem;
-	border-radius: var(--radius-sm);
-	text-decoration: none;
-	color: var(--text);
-	transition: background 0.15s;
-}
-
-.downloads-item:hover {
-	background: var(--accent-soft);
-}
-
-.downloads-item__label {
-	font-size: 0.9rem;
-	font-weight: 500;
-}
-
-.downloads-item__meta {
-	font-size: 0.75rem;
-	color: var(--text-muted);
 }
 </style>
