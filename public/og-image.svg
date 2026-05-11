@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Ailan Ñañez">
+	<defs>
+		<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+			<stop offset="0%" stop-color="#0a0a0a"/>
+			<stop offset="55%" stop-color="#140808"/>
+			<stop offset="100%" stop-color="#1a0505"/>
+		</linearGradient>
+		<linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0%" stop-color="#fecaca"/>
+			<stop offset="100%" stop-color="#ef4444"/>
+		</linearGradient>
+	</defs>
+	<rect width="1200" height="630" fill="url(#bg)"/>
+	<circle cx="1020" cy="140" r="200" fill="#b91c1c" opacity="0.22"/>
+	<circle cx="160" cy="520" r="260" fill="#dc2626" opacity="0.12"/>
+	<text x="72" y="300" fill="#fafafa" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="600">Ailan Ñañez</text>
+	<text x="72" y="380" fill="url(#accent)" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="500">41l4n.github.io</text>
+	<text x="72" y="440" fill="#a3a3a3" font-family="system-ui, -apple-system, sans-serif" font-size="26">Full-Stack · Portfolio</text>
+</svg>

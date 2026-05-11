@@ -8,9 +8,6 @@
 		"es": "ES",
 		"en": "EN"
 	},
-	"meta": {
-		"description": "Ailan Alberto Ñañez — Desarrollador Full-Stack. Laravel, Vue.js, React, Node.js."
-	},
 	"a11y": {
 		"skipToContent": "Saltar al contenido",
 		"brandHome": "Inicio",
