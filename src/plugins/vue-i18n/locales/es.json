@@ -173,13 +173,26 @@
 	"projects": {
 		"title": "Proyectos",
 		"kicker": "Proyectos propios y casos reales",
+		"schoolSuite": {
+			"name": "SchoolSuite",
+			"statusLabel": "Estado:",
+			"statusValue": "En producción",
+			"ctaWebsite": "Ver sitio web",
+			"description": "Proyecto real orientado al sector educativo, con implementación funcional y foco en experiencia de uso, operación diaria y evolución continua del producto.",
+			"linksLabel": "Enlaces:",
+			"links": {
+				"website": "Sitio web",
+				"instagram": "Instagram",
+				"facebook": "Facebook"
+			}
+		},
 		"proStoreKit": {
 			"name": "Pro Store Kit",
 			"statusLabel": "Estado:",
-			"statusValue": "Activo",
+			"statusValue": "En desarrollo",
 			"ctaDocs": "Ver documentación",
-			"description": "Proyecto modelo full-stack orientado a arquitectura desacoplada, consistencia visual y documentación técnica de punta a punta para representar estándares de implementación en entornos reales.",
-			"linksLabel": "Repositorios:",
+			"description": "Proyecto modelo full-stack orientado a arquitectura desacoplada, consistencia visual y documentación técnica de punta a punta; también se utiliza como base educativa para capacitar perfiles junior con prácticas de implementación reales.",
+			"linksLabel": "Enlaces:",
 			"links": {
 				"docs": "Documentación",
 				"frontRepo": "Frontend",

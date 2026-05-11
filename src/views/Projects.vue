@@ -16,6 +16,63 @@
 			<header class="projects__card-head">
 				<div>
 					<h3 class="projects__name">
+						{{ t('projects.schoolSuite.name') }}
+					</h3>
+					<p class="projects__status">
+						{{ t('projects.schoolSuite.statusLabel') }}
+						<span class="projects__status-pill">{{ t('projects.schoolSuite.statusValue') }}</span>
+					</p>
+				</div>
+				<a
+					class="btn btn--primary btn--sm"
+					href="https://school-suite.com/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					{{ t('projects.schoolSuite.ctaWebsite') }}
+				</a>
+			</header>
+			<p class="projects__description">
+				{{ t('projects.schoolSuite.description') }}
+			</p>
+			<p class="projects__links-label">
+				{{ t('projects.schoolSuite.linksLabel') }}
+			</p>
+			<ul class="projects__links">
+				<li>
+					<a
+						href="https://school-suite.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{{ t('projects.schoolSuite.links.website') }}
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://www.instagram.com/school_suite/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{{ t('projects.schoolSuite.links.instagram') }}
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://www.facebook.com/people/SchoolSuite/61582393658643/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{{ t('projects.schoolSuite.links.facebook') }}
+					</a>
+				</li>
+			</ul>
+		</article>
+
+		<article class="projects__card">
+			<header class="projects__card-head">
+				<div>
+					<h3 class="projects__name">
 						{{ t('projects.proStoreKit.name') }}
 					</h3>
 					<p class="projects__status">
@@ -79,6 +136,11 @@ const { t } = useI18n();
 		border-radius: var(--radius-lg);
 		background: color-mix(in srgb, var(--surface-solid) 88%, transparent);
 		box-shadow: var(--shadow-sm);
+		margin-bottom: 1rem;
+	}
+
+	&__card:last-of-type {
+		margin-bottom: 0;
 	}
 
 	&__card-head {

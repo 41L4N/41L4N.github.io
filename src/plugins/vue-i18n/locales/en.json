@@ -173,13 +173,26 @@
 	"projects": {
 		"title": "Projects",
 		"kicker": "Own projects and real-world cases",
+		"schoolSuite": {
+			"name": "SchoolSuite",
+			"statusLabel": "Status:",
+			"statusValue": "In production",
+			"ctaWebsite": "View website",
+			"description": "Real project built for the education sector, with live implementation and focus on user experience, day-to-day operation, and continuous product evolution.",
+			"linksLabel": "Links:",
+			"links": {
+				"website": "Website",
+				"instagram": "Instagram",
+				"facebook": "Facebook"
+			}
+		},
 		"proStoreKit": {
 			"name": "Pro Store Kit",
 			"statusLabel": "Status:",
-			"statusValue": "Active",
+			"statusValue": "In development",
 			"ctaDocs": "View documentation",
-			"description": "Full-stack model project focused on decoupled architecture, visual consistency, and end-to-end technical documentation to reflect implementation standards in real delivery contexts.",
-			"linksLabel": "Repositories:",
+			"description": "Full-stack model project focused on decoupled architecture, visual consistency, and end-to-end technical documentation; it is also used as an educational base to train junior profiles with real implementation practices.",
+			"linksLabel": "Links:",
 			"links": {
 				"docs": "Documentation",
 				"frontRepo": "Frontend",
