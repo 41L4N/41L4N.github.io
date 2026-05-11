@@ -181,8 +181,8 @@
 		}
 	},
 	"footer": {
-		"crafted": "Hecho con Vue y Vite",
-		"sourceCode": "Código fuente"
+		"title": "¿Listo para hablar del proyecto?",
+		"subtitle": "Disponibilidad para colaborar en productos web, mejoras continuas y soporte de desarrollo."
 	},
 	"toast": {
 		"emailCopied": "Correo copiado al portapapeles"

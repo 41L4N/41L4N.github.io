@@ -181,8 +181,8 @@
 		}
 	},
 	"footer": {
-		"crafted": "Built with Vue and Vite",
-		"sourceCode": "Source code"
+		"title": "Ready to discuss your project?",
+		"subtitle": "Available to collaborate on web products, continuous improvements, and development support."
 	},
 	"toast": {
 		"emailCopied": "Email copied to clipboard"

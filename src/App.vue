@@ -4,10 +4,10 @@
 	<main id="main">
 		<Hero />
 		<Profile />
-		<Experience />
 		<Skills />
 		<ProjectWorkflow />
 		<Languages />
+		<Experience />
 	</main>
 	<SiteFooter />
 	<Toast ref="toastRef" />

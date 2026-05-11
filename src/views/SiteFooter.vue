@@ -1,15 +1,28 @@
 <template>
 	<footer class="site-footer">
-		<p>
-			<span>{{ t('footer.crafted') }}</span>
-			·
-			<a
-				class="site-footer__link"
-				href="https://github.com/41L4N/41L4N.github.io"
-				target="_blank"
-				rel="noopener noreferrer"
-			>{{ t('footer.sourceCode') }}</a>
-		</p>
+		<div class="site-footer__inner">
+			<p class="site-footer__subtitle">
+				{{ t('footer.subtitle') }}
+			</p>
+			<div class="site-footer__cta">
+				<a
+					class="btn btn--primary btn--sm"
+					href="mailto:ailanalbertonanez@gmail.com"
+				>{{ t('hero.ctaWrite') }}</a>
+				<a
+					class="btn btn--outline btn--sm"
+					href="https://www.linkedin.com/in/ailan-alberto-nanez"
+					target="_blank"
+					rel="noopener noreferrer"
+				>{{ t('hero.ctaLinkedin') }}</a>
+				<a
+					class="btn btn--ghost btn--sm"
+					href="https://github.com/41L4N"
+					target="_blank"
+					rel="noopener noreferrer"
+				>{{ t('hero.ctaGithub') }}</a>
+			</div>
+		</div>
 	</footer>
 </template>
 
@@ -23,18 +36,31 @@ const { t } = useI18n();
 .site-footer {
 	position: relative;
 	z-index: 1;
-	padding: 2rem 1.25rem 3rem;
-	text-align: center;
-	color: var(--text-muted);
-	font-size: 0.88rem;
+	padding: 2.5rem 1.25rem 3rem;
 	border-top: 1px solid var(--border);
 
-	&__link {
-		color: var(--accent-2);
-		text-decoration: none;
+	&__inner {
+		max-width: 1120px;
+		margin: 0 auto;
+		text-align: center;
+	}
 
-		&:hover {
-			text-decoration: underline;
+	&__subtitle {
+		margin: 0 auto 1rem;
+		max-width: 62ch;
+		color: var(--text-muted);
+		font-size: 0.92rem;
+		line-height: 1.5;
+	}
+
+	&__cta {
+		display: flex;
+		gap: 0.55rem;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		:global(.btn) {
+			min-width: 112px;
 		}
 	}
 }

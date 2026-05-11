@@ -62,7 +62,7 @@
 					/>
 				</button>
 				<a
-					class="btn btn--ghost btn--sm"
+					class="btn btn--outline btn--sm site-header__cv-btn"
 					:href="cvHref"
 					:download="cvDownloadFilename"
 				>
@@ -251,6 +251,16 @@ function toggleTheme() {
 
 		&--moon {
 			mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='black' stroke-width='2'%3E%3Cpath d='M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z'/%3E%3C/svg%3E");
+		}
+	}
+
+	&__cv-btn {
+		border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+		color: var(--text);
+
+		&:hover {
+			border-color: color-mix(in srgb, var(--accent) 68%, var(--border));
+			background: color-mix(in srgb, var(--accent-soft) 35%, var(--surface));
 		}
 	}
 }
