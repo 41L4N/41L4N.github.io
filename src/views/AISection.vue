@@ -35,11 +35,11 @@ import AINetworkCanvas from '@/views/AINetworkCanvas.vue';
 const { t } = useI18n();
 
 const itemKeys = [
-	'aiSection.items.cursor',
-	'aiSection.items.gemini',
-	'aiSection.items.agents',
-	'aiSection.items.prompts',
-	'aiSection.items.stackSetup',
+	'aiSection.items.assistants',
+	'aiSection.items.changes',
+	'aiSection.items.impact',
+	'aiSection.items.review',
+	'aiSection.items.documentation',
 ];
 </script>
 

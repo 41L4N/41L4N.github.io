@@ -169,13 +169,13 @@
 	},
 	"aiSection": {
 		"title": "IA aplicada al desarrollo",
-		"lead": "Uso IA de forma práctica para acelerar análisis, implementación y documentación, manteniendo criterio técnico y revisión manual en las decisiones importantes.",
+		"lead": "Claude y GitHub Copilot forman parte del ciclo de desarrollo: preparación de cambios a partir de requisitos, exploración de código existente y revisión previa de implementaciones. Las propuestas se contrastan con la arquitectura del proyecto y la validación técnica antes de integrarse.",
 		"items": {
-			"cursor": "Cursor",
-			"gemini": "Gemini",
-			"agents": "Agentes",
-			"prompts": "Prompts técnicos",
-			"stackSetup": "Setup de stack"
+			"assistants": "Claude - GitHub Copilot",
+			"changes": "Preparación de cambios",
+			"impact": "Análisis de impacto",
+			"review": "Revisión previa",
+			"documentation": "Documentación técnica"
 		}
 	},
 	"projectWorkflow": {

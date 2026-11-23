@@ -169,13 +169,13 @@
 	},
 	"aiSection": {
 		"title": "AI-assisted development",
-		"lead": "I use AI pragmatically to speed up analysis, implementation, and documentation, while keeping technical judgment and manual review for key decisions.",
+		"lead": "Claude and GitHub Copilot are part of the development cycle: preparing changes from requirements, exploring existing code, and reviewing implementations before integration. Proposed solutions are checked against project architecture and technical validation.",
 		"items": {
-			"cursor": "Cursor",
-			"gemini": "Gemini",
-			"agents": "Agents",
-			"prompts": "Technical prompting",
-			"stackSetup": "Stack setup"
+			"assistants": "Claude - GitHub Copilot",
+			"changes": "Change preparation",
+			"impact": "Impact analysis",
+			"review": "Pre-integration review",
+			"documentation": "Technical documentation"
 		}
 	},
 	"projectWorkflow": {
