@@ -13,7 +13,7 @@
 		</div>
 
 		<p class="ai-section__lead">
-			{{ t('aiSection.lead') }}
+			<span v-html="t('aiSection.lead')" />
 		</p>
 
 		<div class="ai-section__tags">

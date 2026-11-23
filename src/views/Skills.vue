@@ -119,7 +119,6 @@ const categories = [
 		nameKey: 'skills.categories.backend.name',
 		tagKeys: [
 			'skills.categories.backend.phpLaravel',
-			'skills.categories.backend.rails',
 			'skills.categories.backend.node',
 			'skills.categories.backend.typescript',
 		],

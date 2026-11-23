@@ -105,9 +105,9 @@
 					class="hero__badges"
 					aria-hidden="true"
 				>
-					<span class="hero__pill">{{ t('badges.rest') }}</span>
-					<span class="hero__pill">{{ t('badges.cicd') }}</span>
-					<span class="hero__pill">{{ t('badges.mysql') }}</span>
+					<span class="hero__pill">{{ t('badges.laravel') }}</span>
+					<span class="hero__pill">{{ t('badges.vueNuxt') }}</span>
+					<span class="hero__pill">{{ t('badges.reactNext') }}</span>
 				</div>
 			</aside>
 		</div>
@@ -170,7 +170,7 @@ const statRingCssVars = {
 		align-items: start;
 
 		@media (min-width: 900px) {
-			grid-template-columns: 1fr minmax(260px, 320px);
+			grid-template-columns: 1fr minmax(300px, 350px);
 			gap: 3rem;
 		}
 	}
@@ -334,6 +334,7 @@ const statRingCssVars = {
 		background: var(--accent-soft);
 		color: var(--accent);
 		border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+		white-space: nowrap;
 	}
 }
 

@@ -52,9 +52,9 @@
 	},
 	"profile": {
 		"title": "Professional profile",
-		"intro": "Full-Stack Developer with <b>8 years of experience</b>, specialized in Laravel/PHP for backend and Vue/Nuxt.js or React/Next.js for frontend. Strong expertise in API integration, relational databases, and scalable web application development.",
-		"experience": "Proven experience in <b><i>banking environments and sensitive financial systems</i></b>. Participation in critical infrastructure, e-commerce, and enterprise management projects, integrating platforms with a focus on <b>security and traceability</b>.",
-		"commitment": "Committed to code quality through <b>SOLID and Clean Code</b>, rigorous technical documentation, and code review. Technical leadership and work under agile methodologies in remote and hybrid environments."
+		"intro": "Full-Stack Developer with <b><i>8 years of experience</i></b>, specialized in Laravel/PHP for backend and Vue/Nuxt.js or React/Next.js for frontend. Strong expertise in API integration, relational databases, and scalable web application development.",
+		"experience": "Proven experience in <b><i>banking environments and sensitive financial systems</i></b>. Participation in critical infrastructure, e-commerce, and enterprise management projects, integrating platforms with a focus on <b><i>security and traceability</i></b>.",
+		"commitment": "Committed to code quality through <b><i>SOLID and Clean Code</i></b>, rigorous technical documentation, and code review. Technical leadership and work under agile methodologies in remote and hybrid environments."
 	},
 	"experience": {
 		"title": "Experience",
@@ -129,7 +129,6 @@
 			"backend": {
 				"name": "Backend",
 				"phpLaravel": "PHP / Laravel",
-				"rails": "Ruby on Rails",
 				"node": "Node.js",
 				"typescript": "TypeScript"
 			},
@@ -169,7 +168,7 @@
 	},
 	"aiSection": {
 		"title": "AI-assisted development",
-		"lead": "Claude and GitHub Copilot are part of the development cycle: preparing changes from requirements, exploring existing code, and reviewing implementations before integration. Proposed solutions are checked against project architecture and technical validation.",
+		"lead": "<b><i>Claude and GitHub Copilot are part of the development cycle:</i></b> preparing changes from requirements, exploring existing code, and reviewing implementations before integration. Proposed solutions are checked against project architecture and technical validation before integration.",
 		"items": {
 			"assistants": "Claude - GitHub Copilot",
 			"changes": "Change preparation",
@@ -181,8 +180,8 @@
 	"projectWorkflow": {
 		"title": "Workflow",
 		"kicker": "Agility, Issues, Projects, and environments",
-		"primary": "GitHub Projects and Issues as the workflow backbone, with living documentation and sprint visibility in GitHub through pull requests and continuous tracking.",
-		"secondary": "Clear delivery environments (dev, QA, staging, prod) and, when needed, support from Scrum, Jira, and Confluence."
+		"primary": "GitHub Projects and Issues as the workflow backbone, with sprint visibility in GitHub through pull requests and continuous tracking.",
+		"secondary": "Clear delivery environments (dev, QA, prod) and, when needed, support from Scrum, Jira, and Confluence."
 	},
 	"projects": {
 		"title": "Projects",
@@ -220,8 +219,8 @@
 		"emailCopied": "Email copied to clipboard"
 	},
 	"badges": {
-		"rest": "REST",
-		"cicd": "CI/CD",
-		"mysql": "MySQL"
+		"laravel": "Laravel / PHP",
+		"vueNuxt": "Vue / Nuxt",
+		"reactNext": "React / Next"
 	}
 }
