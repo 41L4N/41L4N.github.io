@@ -64,7 +64,7 @@
 			"company": "Banco Exterior, C.A., Banco Universal",
 			"period": "sept. 2026 – Presente",
 			"bullet1": "Desarrollo de interfaces y aplicaciones web para procesos bancarios.",
-			"bullet2": "Frontend con React/Next.js y Nuxt.js, Tailwind CSS y renderizado SSR.",
+			"bullet2": "Frontend con React/Next.js, Tailwind CSS y renderizado SSR.",
 			"bullet3": "Integración de APIs y protección de peticiones en operaciones financieras."
 		},
 		"prolesys": {
