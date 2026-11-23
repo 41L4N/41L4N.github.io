@@ -10,9 +10,8 @@
 			<p
 				v-for="paragraphKey in paragraphKeys"
 				:key="paragraphKey"
-			>
-				{{ t(paragraphKey) }}
-			</p>
+				v-html="t(paragraphKey)"
+			/>
 		</div>
 		<div class="profile__languages">
 			<ul class="profile__languages-list">
@@ -36,6 +35,7 @@ const { t } = useI18n();
 
 const paragraphKeys = [
 	'profile.intro',
+	'profile.experience',
 	'profile.commitment',
 ];
 

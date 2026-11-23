@@ -52,8 +52,9 @@
 	},
 	"profile": {
 		"title": "Professional profile",
-		"intro": "Full-Stack Developer with 8 years of experience building scalable, high-performance web applications. Specialized in the Laravel/PHP ecosystem for backend and Vue.js/Nuxt.js or React/Next.js for frontend, with solid experience in robust architectures, SSR, RESTful APIs, database optimization, and technical team leadership.",
-		"commitment": "Committed to code quality through SOLID principles, Clean Code, and rigorous technical documentation. Proven experience in critical infrastructure, e-commerce, enterprise management systems, and banking environments, working with agile methodologies in remote and hybrid settings."
+		"intro": "Full-Stack Developer with <b>8 years of experience</b>, specialized in Laravel/PHP for backend and Vue/Nuxt.js or React/Next.js for frontend. Strong expertise in API integration, relational databases, and scalable web application development.",
+		"experience": "Proven experience in <b><i>banking environments and sensitive financial systems</i></b>. Participation in critical infrastructure, e-commerce, and enterprise management projects, integrating platforms with a focus on <b>security and traceability</b>.",
+		"commitment": "Committed to code quality through <b>SOLID and Clean Code</b>, rigorous technical documentation, and code review. Technical leadership and work under agile methodologies in remote and hybrid environments."
 	},
 	"experience": {
 		"title": "Experience",
