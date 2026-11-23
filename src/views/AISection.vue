@@ -7,8 +7,13 @@
 		<AINetworkCanvas />
 
 		<div class="section-head ai-section__head">
-			<h2 id="ai-heading">
-				{{ t('aiSection.title') }}
+			<h2 id="ai-heading" class="section-heading">
+				<svg class="section-heading__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+					<path d="M12 3l1.4 4.1L17.5 8.5l-4.1 1.4L12 14l-1.4-4.1-4.1-1.4 4.1-1.4L12 3z" />
+					<path d="M18.5 14l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2z" />
+					<path d="M5.5 14l.6 1.7 1.7.6-1.7.6-.6 1.7-.6-1.7-1.7-.6 1.7-.6.6-1.7z" />
+				</svg>
+				<span>{{ t('aiSection.title') }}</span>
 			</h2>
 		</div>
 

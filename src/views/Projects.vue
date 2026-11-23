@@ -5,8 +5,12 @@
 		aria-labelledby="projects-heading"
 	>
 		<div class="section-head">
-			<h2 id="projects-heading">
-				{{ t('projects.title') }}
+			<h2 id="projects-heading" class="section-heading">
+				<svg class="section-heading__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+					<path d="M3 7h7l2 2h9v10H3V7z" />
+					<path d="M3 7V5h7l2 2" />
+				</svg>
+				<span>{{ t('projects.title') }}</span>
 			</h2>
 			<p class="section-kicker">
 				{{ t('projects.kicker') }}

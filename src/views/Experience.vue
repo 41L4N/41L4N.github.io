@@ -4,7 +4,13 @@
 		id="experience"
 	>
 		<div class="section-head">
-			<h2>{{ t('experience.title') }}</h2>
+			<h2 class="section-heading">
+				<svg class="section-heading__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+					<rect x="3" y="7" width="18" height="13" rx="2" />
+					<path d="M8 7V4h8v3M3 12h18M10 12v2h4v-2" />
+				</svg>
+				<span>{{ t('experience.title') }}</span>
+			</h2>
 			<p class="section-kicker">
 				{{ t('experience.kicker') }}
 			</p>

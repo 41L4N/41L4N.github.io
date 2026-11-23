@@ -5,8 +5,12 @@
 		aria-labelledby="skills-heading"
 	>
 		<div class="section-head">
-			<h2 id="skills-heading">
-				{{ t('skills.title') }}
+			<h2 id="skills-heading" class="section-heading">
+				<svg class="section-heading__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+					<polyline points="16 18 22 12 16 6" />
+					<polyline points="8 6 2 12 8 18" />
+				</svg>
+				<span>{{ t('skills.title') }}</span>
 			</h2>
 			<p class="section-kicker">
 				{{ t('skills.kicker') }}

@@ -4,7 +4,13 @@
 		id="languages"
 	>
 		<div class="section-head">
-			<h2>{{ t('languages.title') }}</h2>
+			<h2 class="section-heading">
+				<svg class="section-heading__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+					<circle cx="12" cy="12" r="9" />
+					<path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z" />
+				</svg>
+				<span>{{ t('languages.title') }}</span>
+			</h2>
 		</div>
 		<div class="languages__cards">
 			<article

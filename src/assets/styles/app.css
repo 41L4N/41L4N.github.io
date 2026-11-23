@@ -257,6 +257,20 @@ main {
 	font-weight: 600;
 }
 
+.section-heading {
+	display: flex;
+	align-items: center;
+	gap: 0.65rem;
+}
+
+.section-heading__icon {
+	width: 0.9em;
+	height: 0.9em;
+	flex: 0 0 auto;
+	color: var(--accent);
+	stroke-width: 1.7;
+}
+
 .section-kicker {
 	margin: 0;
 	color: var(--text-muted);

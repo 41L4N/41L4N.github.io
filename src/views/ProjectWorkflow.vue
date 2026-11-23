@@ -5,8 +5,14 @@
 		aria-labelledby="project-workflow-heading"
 	>
 		<div class="section-head">
-			<h2 id="project-workflow-heading">
-				{{ t('projectWorkflow.title') }}
+			<h2 id="project-workflow-heading" class="section-heading">
+				<svg class="section-heading__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+					<circle cx="6" cy="5" r="2" />
+					<circle cx="18" cy="5" r="2" />
+					<circle cx="6" cy="19" r="2" />
+					<path d="M6 7v10M8 5h4a6 6 0 0 1 6 6v-4M8 19h4a6 6 0 0 0 6-6v-6" />
+				</svg>
+				<span>{{ t('projectWorkflow.title') }}</span>
 			</h2>
 			<p class="section-kicker">
 				{{ t('projectWorkflow.kicker') }}
