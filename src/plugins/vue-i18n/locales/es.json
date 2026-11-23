@@ -52,8 +52,8 @@
 	},
 	"profile": {
 		"title": "Perfil profesional",
-		"intro": "Desarrollador Full-Stack con 8 años de experiencia construyendo aplicaciones web escalables y de alto rendimiento. Especializado en el ecosistema Laravel/PHP para backend y Vue.js/React para frontend, con sólida experiencia en arquitecturas robustas, APIs RESTful, optimización de bases de datos y liderazgo técnico de equipos.",
-		"commitment": "Comprometido con la calidad del código a través de principios SOLID, Clean Code y documentación técnica rigurosa. Experiencia comprobada en proyectos de infraestructura crítica, e-commerce y sistemas de gestión empresarial, trabajando bajo metodologías ágiles en entornos remotos e híbridos."
+		"intro": "Desarrollador Full-Stack con 8 años de experiencia construyendo aplicaciones web escalables y de alto rendimiento. Especializado en el ecosistema Laravel/PHP para backend y Vue.js/Nuxt.js o React/Next.js para frontend, con sólida experiencia en arquitecturas robustas, SSR, APIs RESTful, optimización de bases de datos y liderazgo técnico de equipos.",
+		"commitment": "Comprometido con la calidad del código a través de principios SOLID, Clean Code y documentación técnica rigurosa. Experiencia comprobada en proyectos de infraestructura crítica, e-commerce, sistemas de gestión empresarial y entornos bancarios, trabajando bajo metodologías ágiles en entornos remotos e híbridos."
 	},
 	"experience": {
 		"title": "Experiencia",
