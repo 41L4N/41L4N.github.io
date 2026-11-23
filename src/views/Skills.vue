@@ -102,7 +102,10 @@ const categories = [
 		tagKeys: [
 			'skills.categories.frontend.vueQuasar',
 			'skills.categories.frontend.reactMui',
+			'skills.categories.frontend.nuxt',
 			'skills.categories.frontend.next',
+			'skills.categories.frontend.tailwind',
+			'skills.categories.frontend.ssr',
 			'skills.categories.frontend.html5',
 			'skills.categories.frontend.cssSass',
 			'skills.categories.frontend.bootstrap',
@@ -136,6 +139,7 @@ const categories = [
 		tagKeys: [
 			'skills.categories.apis.rest',
 			'skills.categories.apis.payments',
+			'skills.categories.apis.encryption',
 			'skills.categories.apis.external',
 		],
 	},

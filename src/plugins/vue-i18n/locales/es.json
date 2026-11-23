@@ -114,7 +114,10 @@
 				"name": "Frontend",
 				"vueQuasar": "Vue.js (Quasar, Vuetify)",
 				"reactMui": "React (Material UI)",
+				"nuxt": "Nuxt.js",
 				"next": "Next.js",
+				"tailwind": "Tailwind CSS",
+				"ssr": "SSR",
 				"html5": "HTML5",
 				"cssSass": "CSS3 / SASS",
 				"bootstrap": "Bootstrap",
@@ -139,6 +142,7 @@
 				"name": "APIs e integraciones",
 				"rest": "APIs REST",
 				"payments": "Pasarelas de pago",
+				"encryption": "Cifrado de peticiones",
 				"external": "Servicios externos"
 			},
 			"infra": {
