@@ -69,56 +69,6 @@
 			</ul>
 		</article>
 
-		<article class="projects__card">
-			<header class="projects__card-head">
-				<div>
-					<h3 class="projects__name">
-						{{ t('projects.proStoreKit.name') }}
-					</h3>
-					<p class="projects__status">
-						{{ t('projects.proStoreKit.statusLabel') }}
-						<span class="projects__status-pill">{{ t('projects.proStoreKit.statusValue') }}</span>
-					</p>
-				</div>
-				<a
-					class="btn btn--primary btn--sm"
-					href="https://41l4n.github.io/pro-store-kit-DOCS/"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					{{ t('projects.proStoreKit.ctaDocs') }}
-				</a>
-			</header>
-			<p class="projects__description">
-				{{ t('projects.proStoreKit.description') }}
-			</p>
-			<p class="projects__links-label">
-				{{ t('projects.proStoreKit.linksLabel') }}
-			</p>
-			<ul class="projects__links">
-				<li>
-					<a
-						href="https://github.com/41L4N/pro-store-kit-DOCS"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						{{ t('projects.proStoreKit.links.docs') }}
-					</a>
-				</li>
-				<li>
-					<a
-						href="https://github.com/41L4N/pro-store-kit--FRONT"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						{{ t('projects.proStoreKit.links.frontRepo') }}
-					</a>
-				</li>
-				<li class="projects__link-disabled">
-					{{ t('projects.proStoreKit.links.backRepoPending') }}
-				</li>
-			</ul>
-		</article>
 	</section>
 </template>
 

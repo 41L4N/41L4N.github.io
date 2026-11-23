@@ -194,19 +194,6 @@
 				"instagram": "Instagram",
 				"facebook": "Facebook"
 			}
-		},
-		"proStoreKit": {
-			"name": "Pro Store Kit",
-			"statusLabel": "Status:",
-			"statusValue": "In development",
-			"ctaDocs": "View documentation",
-			"description": "Full-stack model project focused on decoupled architecture, visual consistency, and end-to-end technical documentation; it is also used as an educational base to train junior profiles with real implementation practices.",
-			"linksLabel": "Links:",
-			"links": {
-				"docs": "Documentation",
-				"frontRepo": "Frontend",
-				"backRepoPending": "Backend"
-			}
 		}
 	},
 	"languages": {

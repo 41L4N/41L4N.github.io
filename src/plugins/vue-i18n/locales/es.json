@@ -194,19 +194,6 @@
 				"instagram": "Instagram",
 				"facebook": "Facebook"
 			}
-		},
-		"proStoreKit": {
-			"name": "Pro Store Kit",
-			"statusLabel": "Estado:",
-			"statusValue": "En desarrollo",
-			"ctaDocs": "Ver documentación",
-			"description": "Proyecto modelo full-stack orientado a arquitectura desacoplada, consistencia visual y documentación técnica de punta a punta; también se utiliza como base educativa para capacitar perfiles junior con prácticas de implementación reales.",
-			"linksLabel": "Enlaces:",
-			"links": {
-				"docs": "Documentación",
-				"frontRepo": "Frontend",
-				"backRepoPending": "Backend"
-			}
 		}
 	},
 	"languages": {
