@@ -1,6 +1,6 @@
 <template>
 	<section
-		class="section section--profile profile reveal"
+		class="section profile reveal"
 		id="profile"
 	>
 		<div class="section-head">

@@ -1,6 +1,6 @@
 <template>
 	<section
-		class="section section--project-workflow project-workflow reveal"
+		class="section project-workflow reveal"
 		id="project-workflow"
 		aria-labelledby="project-workflow-heading"
 	>

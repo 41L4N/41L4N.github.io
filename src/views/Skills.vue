@@ -1,6 +1,6 @@
 <template>
 	<section
-		class="section section--skills skills reveal"
+		class="section skills reveal"
 		id="skills"
 		aria-labelledby="skills-heading"
 	>

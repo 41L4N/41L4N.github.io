@@ -4,7 +4,7 @@
 		id="top"
 	>
 		<div class="hero__grid">
-			<div class="hero__copy">
+			<div>
 				<p class="hero__eyebrow">
 					{{ t('hero.eyebrow') }}
 				</p>

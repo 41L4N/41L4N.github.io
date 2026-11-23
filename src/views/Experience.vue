@@ -1,6 +1,6 @@
 <template>
 	<section
-		class="section section--experience reveal"
+		class="section reveal"
 		id="experience"
 	>
 		<div class="section-head">

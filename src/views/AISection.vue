@@ -1,6 +1,6 @@
 <template>
 	<section
-		class="section section--ai ai-section reveal"
+		class="section ai-section reveal"
 		id="ai"
 		aria-labelledby="ai-heading"
 	>

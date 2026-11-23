@@ -1,6 +1,6 @@
 <template>
 	<section
-		class="section section--languages languages reveal"
+		class="section languages reveal"
 		id="languages"
 	>
 		<div class="section-head">
