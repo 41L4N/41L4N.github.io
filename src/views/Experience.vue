@@ -52,15 +52,13 @@ const { t } = useI18n();
 
 const jobs = [
 	{
-		roleKey: 'experience.freelance.role',
-		companyKey: 'experience.freelance.company',
-		periodKey: 'experience.freelance.period',
+		roleKey: 'experience.bancoExterior.role',
+		companyKey: 'experience.bancoExterior.company',
+		periodKey: 'experience.bancoExterior.period',
 		bulletKeys: [
-			'experience.freelance.bullet1',
-			'experience.freelance.bullet2',
-			'experience.freelance.bullet3',
-			'experience.freelance.bullet4',
-			'experience.freelance.bullet5',
+			'experience.bancoExterior.bullet1',
+			'experience.bancoExterior.bullet2',
+			'experience.bancoExterior.bullet3',
 		],
 	},
 	{
@@ -71,19 +69,6 @@ const jobs = [
 			'experience.prolesys.bullet1',
 			'experience.prolesys.bullet2',
 			'experience.prolesys.bullet3',
-			'experience.prolesys.bullet4',
-			'experience.prolesys.bullet5',
-		],
-	},
-	{
-		roleKey: 'experience.sismg.role',
-		companyKey: 'experience.sismg.company',
-		periodKey: 'experience.sismg.period',
-		bulletKeys: [
-			'experience.sismg.bullet1',
-			'experience.sismg.bullet2',
-			'experience.sismg.bullet3',
-			'experience.sismg.bullet4',
 		],
 	},
 	{
@@ -186,7 +171,7 @@ const jobs = [
 			margin: 0;
 			padding-left: 1.15rem;
 			color: var(--text-muted);
-			font-size: 0.92rem;
+			font-size: 1rem;
 		}
 
 		li {

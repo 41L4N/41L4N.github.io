@@ -49,7 +49,7 @@ const { t } = useI18n();
 		margin: 0 auto 1rem;
 		max-width: 62ch;
 		color: var(--text-muted);
-		font-size: 0.92rem;
+		font-size: 1rem;
 		line-height: 1.5;
 	}
 

@@ -124,7 +124,7 @@ const { t } = useI18n();
 		display: inline-flex;
 		align-items: center;
 		gap: 0.45rem;
-		font-size: 0.84rem;
+		font-size: 0.88rem;
 		color: var(--text-muted);
 	}
 
@@ -140,7 +140,7 @@ const { t } = useI18n();
 		margin: 0 0 0.9rem;
 		max-width: 68ch;
 		color: var(--text);
-		font-size: 0.95rem;
+		font-size: 1rem;
 		line-height: 1.58;
 	}
 

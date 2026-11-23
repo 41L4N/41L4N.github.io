@@ -117,7 +117,7 @@ const languageEntries = [
 	}
 
 	&__languages-level {
-		font-size: 0.84rem;
+		font-size: 0.88rem;
 		font-weight: 400;
 		color: var(--text-muted);
 		line-height: 1.35;

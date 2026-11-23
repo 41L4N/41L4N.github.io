@@ -59,34 +59,21 @@
 	"experience": {
 		"title": "Experiencia",
 		"kicker": "Línea de tiempo interactiva",
-		"freelance": {
-			"role": "Desarrollador Web Full-Stack Freelance",
-			"company": "Autónomo / Clientes privados",
-			"period": "jun. 2018 – Presente",
-			"bullet1": "Desarrollo de aplicaciones web full-stack con Laravel, Vue.js (Quasar, Vuetify) y React.",
-			"bullet2": "Arquitecturas escalables para gestión, e-commerce y aplicaciones educativas.",
-			"bullet3": "Optimización de rendimiento y UX en proyectos de mediana y alta complejidad.",
-			"bullet4": "Ciclo completo: requisitos, desarrollo, despliegue y soporte post-entrega.",
-			"bullet5": "Integración de APIs, pasarelas de pago y servicios de terceros."
+		"bancoExterior": {
+			"role": "Desarrollador Frontend",
+			"company": "Banco Exterior, C.A., Banco Universal",
+			"period": "sept. 2026 – Presente",
+			"bullet1": "Desarrollo de interfaces y aplicaciones web para procesos bancarios.",
+			"bullet2": "Frontend con React/Next.js y Nuxt.js, Tailwind CSS y renderizado SSR.",
+			"bullet3": "Integración de APIs y protección de peticiones en operaciones financieras."
 		},
 		"prolesys": {
-			"role": "Desarrollador Web Full-Stack",
+			"role": "Desarrollador Frontend",
 			"company": "Prolesys Consultores C.A.",
-			"period": "jun. 2022 – abr. 2025",
+			"period": "jun. 2022 – feb. 2026",
 			"bullet1": "Sistemas críticos para infraestructura nacional: seguridad y alta disponibilidad.",
-			"bullet2": "Liderazgo técnico en arquitecturas robustas y estándares de desarrollo.",
-			"bullet3": "Optimización en aplicaciones de alto tráfico: tiempos de respuesta y estabilidad.",
-			"bullet4": "Gestión de equipo y mentoría: Clean Code, SOLID, revisión de código y documentación.",
-			"bullet5": "Diseño y consumo de APIs REST para integración con sistemas externos."
-		},
-		"sismg": {
-			"role": "Desarrollador Web Full-Stack",
-			"company": "SISMG Chile",
-			"period": "jun. 2022 – abr. 2025",
-			"bullet1": "Módulos de software para el mercado chileno, coordinación con equipos remotos.",
-			"bullet2": "Frontend con Vue.js y React, compatibilidad y rendimiento cross-browser.",
-			"bullet3": "Integración con backends PHP/Laravel y Node.js vía REST.",
-			"bullet4": "Scrum/Kanban y entrega continua en sprints."
+			"bullet2": "Liderazgo técnico, gestión de equipo y mentoría en Clean Code, SOLID y estándares de desarrollo.",
+			"bullet3": "Optimización en aplicaciones de alto tráfico: tiempos de respuesta y estabilidad."
 		},
 		"goldtech": {
 			"role": "Desarrollador Web Full-Stack",

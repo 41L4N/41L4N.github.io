@@ -67,7 +67,7 @@ const entries = [
 		p {
 			margin: 0;
 			color: var(--text-muted);
-			font-size: 0.95rem;
+			font-size: 1rem;
 		}
 	}
 }

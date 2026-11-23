@@ -244,7 +244,7 @@ const statRingCssVars = {
 
 	&__meta {
 		margin: 0;
-		font-size: 0.92rem;
+		font-size: 1rem;
 		color: var(--text-muted);
 
 		a {
@@ -312,7 +312,7 @@ const statRingCssVars = {
 		margin: 0 0 1rem;
 		padding: 0 0 0 1.1rem;
 		color: var(--text-muted);
-		font-size: 0.92rem;
+		font-size: 1rem;
 
 		li {
 			margin-bottom: 0.4rem;

@@ -59,34 +59,21 @@
 	"experience": {
 		"title": "Experience",
 		"kicker": "Interactive timeline",
-		"freelance": {
-			"role": "Freelance Full-Stack Web Developer",
-			"company": "Self-employed / Private clients",
-			"period": "Jun 2018 – Present",
-			"bullet1": "Full-stack web development with Laravel, Vue.js (Quasar, Vuetify), and React.",
-			"bullet2": "Scalable architectures for management, e-commerce, and educational applications.",
-			"bullet3": "Performance and UX optimization in medium- and high-complexity projects.",
-			"bullet4": "Full lifecycle: requirements, development, deployment, and post-delivery support.",
-			"bullet5": "Integration of APIs, payment gateways, and third-party services."
+		"bancoExterior": {
+			"role": "Frontend Developer",
+			"company": "Banco Exterior, C.A., Banco Universal",
+			"period": "Sep 2026 – Present",
+			"bullet1": "Development of web interfaces and applications for banking processes.",
+			"bullet2": "Frontend development with React/Next.js and Nuxt.js, Tailwind CSS, and SSR.",
+			"bullet3": "API integration and request protection for financial operations."
 		},
 		"prolesys": {
-			"role": "Full-Stack Web Developer",
+			"role": "Frontend Developer",
 			"company": "Prolesys Consultores C.A.",
-			"period": "Jun 2022 – Apr 2025",
+			"period": "Jun 2022 – Feb 2026",
 			"bullet1": "Critical systems for national infrastructure: security and high availability.",
-			"bullet2": "Technical leadership on robust architectures and development standards.",
-			"bullet3": "Optimization in high-traffic applications: response times and stability.",
-			"bullet4": "Team management and mentoring: Clean Code, SOLID, code review, and documentation.",
-			"bullet5": "Design and consumption of REST APIs for integration with external systems."
-		},
-		"sismg": {
-			"role": "Full-Stack Web Developer",
-			"company": "SISMG Chile",
-			"period": "Jun 2022 – Apr 2025",
-			"bullet1": "Software modules for the Chilean market, coordination with remote teams.",
-			"bullet2": "Frontend with Vue.js and React, cross-browser compatibility and performance.",
-			"bullet3": "Integration with PHP/Laravel and Node.js backends via REST.",
-			"bullet4": "Scrum/Kanban and continuous delivery in sprints."
+			"bullet2": "Technical leadership, team management, and mentoring in Clean Code, SOLID, and development standards.",
+			"bullet3": "Optimization in high-traffic applications: response times and stability."
 		},
 		"goldtech": {
 			"role": "Full-Stack Web Developer",

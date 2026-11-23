@@ -51,7 +51,7 @@ const { t } = useI18n();
 	&__secondary {
 		margin: 0;
 		color: var(--text-muted);
-		font-size: 0.92rem;
+		font-size: 1rem;
 		line-height: 1.55;
 	}
 }

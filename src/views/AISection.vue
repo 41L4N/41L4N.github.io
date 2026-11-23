@@ -65,7 +65,7 @@ const itemKeys = [
 		margin: 0 0 1rem;
 		max-width: 78ch;
 		color: var(--text-muted);
-		font-size: clamp(0.95rem, 1.65vw, 1.04rem);
+		font-size: clamp(1rem, 1.65vw, 1.08rem);
 	}
 
 	&__tags {
